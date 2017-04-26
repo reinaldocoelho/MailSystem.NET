@@ -107,6 +107,14 @@ namespace ActiveUp.Net.Tests.Common
             address.Name.ShouldEqual("Display Name only one quote");
         }
 
+        [Test]
+        public void should_parse_address_with_invalid_empty_quote()
+        {
+            var address = Parser.ParseAddress("\"\" Invoice@dymak.nl\"");
+            address.Email.ShouldEqual("Invoice@dymak.nl");
+            address.Name.ShouldEqual("");
+        }
+
         /// <summary>
         /// [discussion:641270] - Created discussion to validate if this test is rigth.
         /// </summary>

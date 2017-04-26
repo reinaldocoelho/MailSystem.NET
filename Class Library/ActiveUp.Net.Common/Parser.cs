@@ -1037,7 +1037,7 @@ namespace ActiveUp.Net.Mail
         /// <returns></returns>
         public static Address ParseAddress(string input)
         {
-            input = input.TrimEnd(';');
+            input = (input ?? "").Replace("\"", "").TrimEnd(';');
             try
             {
                 if (!input.Contains("<"))
@@ -1045,7 +1045,7 @@ namespace ActiveUp.Net.Mail
 
                 Address address = null;
 
-                Match displayNameMatch = Regex.Match(input, "(\"?(.+)(\"?(?=\\s?<)|(?=<)))");
+                var displayNameMatch = Regex.Match(input, "(\"?(.+)(\"?(?=\\s?<)|(?=<)))");
                 if (displayNameMatch.Success)
                     address = new Address(input.Replace(displayNameMatch.Value, string.Empty).Trim().Trim(new[] { '<', '>' }), displayNameMatch.Groups[1].Value);
                 else
@@ -1054,7 +1054,7 @@ namespace ActiveUp.Net.Mail
                 CleanupAddress(address);
                 return address;
             }
-            catch
+            catch (Exception)
             {
                 return new Address { Email = input };
             }
