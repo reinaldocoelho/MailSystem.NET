@@ -1,0 +1,2243 @@
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=brasiltour.onmicrosoft.com; s=selector1-brasiltour-onmicrosoft-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version;
+ bh=33uz6ohNLF1TZ8UQH0sorJUyjbIJU1Igy7S8um9PH4U=;
+ b=gH+3wJH1Qhnt9M4Tudgw5ucEqexC7oP51DcXAdWYuya2XP1LC6mOvABLE4GMGHVZwK3bvMmC2nrlAtcEO10h/woqTHVv8H0wPj/AQWqibnMQAAV7Y4mntSvSAA7MLKTg39doeKonL24p5ilkYKyMzQEIOPSlOwNpvkKzyOonyVE=
+Received: from FR1PR80CA0006.lamprd80.prod.outlook.com (10.175.145.144) by
+ FR1PR80MB1896.lamprd80.prod.outlook.com (10.175.143.22) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.1047.13; Wed, 26 Apr 2017 17:07:51 +0000
+Received: from BL2NAM02FT037.eop-nam02.prod.protection.outlook.com
+ (2a01:111:f400:7e46::200) by FR1PR80CA0006.outlook.office365.com
+ (2603:10d6:200:21::16) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id 15.1.1061.12 via
+ Frontend Transport; Wed, 26 Apr 2017 17:07:50 +0000
+Authentication-Results: spf=pass (sender IP is 136.147.131.239)
+ smtp.mailfrom=bounce.emailpontosmultiplus.com.br; br.hrgworldwide.com;
+ dkim=pass (signature was verified)
+ header.d=emailpontosmultiplus.com.br;br.hrgworldwide.com; dmarc=bestguesspass
+ action=none header.from=emailpontosmultiplus.com.br;
+Received-SPF: Pass (protection.outlook.com: domain of
+ bounce.emailpontosmultiplus.com.br designates 136.147.131.239 as permitted
+ sender) receiver=protection.outlook.com; client-ip=136.147.131.239;
+ helo=mta.emailpontosmultiplus.com.br;
+Received: from mta.emailpontosmultiplus.com.br (136.147.131.239) by
+ BL2NAM02FT037.mail.protection.outlook.com (10.152.77.11) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384) id
+ 15.1.1019.14 via Frontend Transport; Wed, 26 Apr 2017 17:07:49 +0000
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=200608; d=emailpontosmultiplus.com.br;
+ h=From:To:Subject:Date:List-Unsubscribe:MIME-Version:List-ID:Message-ID:Content-Type; i=novidades@emailpontosmultiplus.com.br;
+ bh=J5t1OULPi9sBQ0kNt4IFCGHM6Do=;
+ b=lNFT/gtMMKGTYMuCX/r0YzKEF8roPpDKBQ8dw8j9YnkZzJ3Yh620/uj3oa8qK9l6Gq9NLSbgjloD
+   XBlSPXFpdLFaL9LXqTBdlq2eOIudCn0HoD8xwjzWqf8/Li1tTL7nQNvnvyOjPgd5qMC3GBn2ombZ
+   lhvdaZMgfOMIhaBiFH4=
+Received: by mta.emailpontosmultiplus.com.br id h039uc163hs0 for <destin@worldwide.com>; Wed, 26 Apr 2017 17:07:49 +0000 (envelope-from <bounce-81_HTML-15147692-2335316-7205692-119@bounce.emailpontosmultiplus.com.br>)
+From: "Multiplus" <novidades@emailpontosmultiplus.com.br>
+To: <destin@worldwide.com>
+Subject: =?UTF-8?Q?ATEN=C3=87=C3=83O:_Ofertas_que_v=C3=A3o_te_surpreender.?=
+ =?UTF-8?Q?_Troque_seus_pontos!?=
+Date: Wed, 26 Apr 2017 11:07:45 -0600
+List-Unsubscribe: <mailto:leave-fd821c711a3c402029-fe5c15757460037b7c16-fe9816737661077c73-fe9013727561027477-ff6415717c@leave.emailpontosmultiplus.com.br>
+MIME-Version: 1.0
+List-ID: <7205692_2335316.xt.local>
+X-CSA-Complaints: whitelistcomplaints@eco.de
+x-job: 7205692_2335316
+Message-ID: <a33787b3-fdf1-47cc-8985-b4d34b0a3485@xtgap4s7mta1215.xt.local>
+Content-Type: multipart/alternative;
+	boundary="blbrHJoPGijc=_?:"
+Return-Path:
+	bounce-81_HTML-15147692-2335316-7205692-119@bounce.emailpontosmultiplus.com.br
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: fec095e8-7415-4521-9abe-d8c80dedd2cf:0
+X-Forefront-Antispam-Report:
+	CIP:136.147.131.239;IPV:NLI;CTRY:CA;EFV:NLI;SFV:NSPM;SFS:(10009020)(8156002)(31590200002)(39410400002)(39450400003)(39840400002)(39400400002)(39850400002)(1060300004)(2980300002)(438002)(286005)(596005)(189002)(199003)(64800200002)(7636002)(19618635001)(55176004)(7596002)(53946003)(84326002)(7066003)(95666005)(10250500002)(18926415007)(575784001)(15550500002)(980100002)(16003)(101616003)(14613045005)(104016004)(224313004)(42882006)(146002)(19627405001)(512874002)(110456001)(58536013)(19810500001)(733005)(226693001)(6986002)(606005)(54356999)(106466001)(33646002)(98436002)(2351001)(956001)(224303003)(6862004)(4290100001)(50986999)(6666003)(74482002)(36036004)(236005)(42186005)(9686003)(6306002)(110136004)(47976999)(2906002)(356003)(38730400002)(31696002)(7906003)(31686004)(15974865002)(42042002)(111695004)(579004)(559001);DIR:OUT;SFP:1101;SCL:1;SRVR:FR1PR80MB1896;H:mta.emailpontosmultiplus.com.br;FPR:;SPF:Pass;MLV:sfv;MX:1;A:0;LANG:pt;
+X-Microsoft-Exchange-Diagnostics: 1;BL2NAM02FT037;1:lgSNZIB7zi12Kl1H35+qdQPVd/KWALVTtA+NTGW8QBBUZE2IDXSYS/T8NE9J58ZLUn/C90haO89LFsL5e3ArLW6wijNVsONQ4QDtD5S53E2rg4H0Z5mJg+y1mDClnl8AYY2hgH5Uxu0RY0eHPNKjq0GV3ckrNvD4pQFlkuG1jjbjyRu9VK8TPCAkBTqji42I1dcvaFzkqgcRgWvaLRluqf5eJbfKA+m7n1ImLv0fQvSjooRsUy4nQfojmAR8pwzHZyt2EM6TtE6BoVz3tTRauXkX1zIuBHBObPJg1Fdl1IDHKBewE9yWrh/pEe4fOAqyKDxTRtQxp3ADOefuRxfjLEk8sI6L+zBu6HOVcG/PKfIULVP7M/FEGbvxp5rH4YelimFAz9xup593LK5jnEjwTLtlMXkL3dqJyXD+KPrp8Mr/vlvX+f6ZIwj+wgf+QcFyEOX4hk7jfjtRDpjDktxQekvNBsTmaiZgvYTwv9jhwqZWLiU3pWS5ju45lho/DRcyclqv+ucDpaA16ghzRfI+hQ80K6reFomNcnZTqwpQsnL6FQaHcTFeSsLi/lInyQIUMVglPbTJGvWU7E+baRimW1J93XlYfdYzcX8rKTcdlRBQzwlqinVc/6mTRTE5DfwV/COQ/xSPfZMpvq3xs30EoiyyqeLoorkm55crcKN66lMgj2a4Uf5sZ+RpwHQ4cM8OVehWBuSQ9nk2sg0k0P6Ojg==
+X-MS-Office365-Filtering-Correlation-Id: d058a9f7-8c10-4027-3a98-08d48cc6c4e3
+X-DkimResult-Test: Passed
+X-Microsoft-Antispam:
+	UriScan:(76021641016886)(62312605597471);BCL:3;PCL:0;RULEID:(22001)(421252002)(81800236)(8251501002)(3001016)(12201505038)(71702078);SRVR:FR1PR80MB1896;
+X-Microsoft-Exchange-Diagnostics:
+	1;FR1PR80MB1896;3:jtLcpfwNFJ+pCSzvpFCZItd5ojNGLfRt3gybxc/xrSRkGOOt42vhIKd00PbpV1pnvJe4lArg7FNF+UksF/KyDa4WTmmuUEbIUwk4BRLQ7UE1eJsgvsq9/6uLje1hjSJCB26Q4JF9y61lzFtPQh5mxPoGQWDHERSkXJxpPoL5LWuChBanuIHwOPK+/JGQoZEJjNJa77HE28BgtC1bYKfb/uYe3Z2OrIh5aNdQibHd6BNP9CWshb/CCtc6YxfljcO+a1Oj1/PIje7N+MVNJULcl0t48KOo6Sb/XYPkMReKBTgC8mMrpezQZuBkUh2GpOlwVdFFUG5Y4WbhNyBU7A64ILHkZQEh0pBdezdyqEOmts43FfMiWavLuqEUU+fWsvNQqj9BD+IPHbrkP4C2nf7/OrpkSIdqKSExPMS7hhUVisOJ4V+DtkoBeKnDz2UAAuri4aMmjtklzjSQBD2l+ZD7WF/pS259Z1IX/Ki4akl4OXRlx7JwvVUQ4gdM6XXMRCQxzEq8gunc/HXnBV6z1IYS2tDouBdCGeiUC0TA9udOClbu9h4/zGEqLofLU4U2n48buSnKO97afgGCruhe+tK2ew==
+X-Microsoft-Exchange-Diagnostics:
+	1;FR1PR80MB1896;25:diqDQBIWmnnf1SiTmYmtQsQlufxlXvSzCjLwenC/xqcUpVXCYVIX1beqx9jYV3FJ3tBY0J1fbBsN+gI/P0tiWDGrityirfHM9vU112jeljTJ28iBicl894lV7RpK/zwXK4inuZgAw4vux6lv+/XB0rUEcvsKvUS25Zm2fySwV5TKtvtVahpFHslIS0tGT5/i2QLIa5032ynxwdC8P+fJb/BUTkWtumhVAs2WDgxyR+dEddPAY46nZG+OFlEOT9xrj969pLqg5hZbG296KwTs58qGpVW5Aw1RraGWUCpIl2u2N7Z01rNHkyspi2YhvykvXBmj2iaWIeSzYc3TpEyXoKbCCADlUsCO5DYkHGIDwdi8kCZvriRpdkqXHQw/Y5EOe1Ckq8VPBZ276KcQNWj4Z/OoflVVAlBxNAH2jCMNPCY89PFei6x2oM5OQnsdlosl7ETwRhGF3R8wqwk1EmA9JA==;31:ydUBFqbR0eB7Vpasn5QcG5gBGMER7odX21qR/saZbAyLGQbfW/KID7Pmy+sReUnHBxSe//pUxhnBSKRqDTEUh7HrEFjc3cDIlGZKFsh443lb1I8Kg4HVF/EuReCYhoqGNLSemJLpZhAVbk/uk7jSl8fUfAF5WbgfCe3N9KVDQFAQ+VnBrM/3XEk3fPrax1fu4xwH2igMXe/XZ1jEk3tDea8S0HmXzFqyK3MohOK2R3Rc8i84CatMcq4owT+wLp1K0ip6XMY6EbcrgqgFwcFrAA==
+X-LD-Processed: fec095e8-7415-4521-9abe-d8c80dedd2cf,ExtAddr
+X-Microsoft-Exchange-Diagnostics:
+	1;FR1PR80MB1896;20:qdsETvIFnMPqfU5AHh4Tz5Vg1AgAjNYBxxfXU3Nc6tgdUSRBuBFKtwtE3g6IiTar/bjBF3xO22JzDHixeaJebCgcCq9OcQSZwAWtEi5176rwnK871i9ogUkrQON0SmXdMlJCUCoRPlX2Zz3LyFRVcyvEVW2TFhwRizW7cANea3pWil2jySa98sIVMRMUe791jap+LGVFKWBv0elYUQL8LHmXcmPjPgXR47luZsGPP6GRX0vBuEU+l+MNy6+76aCGsKCtugcuhMNkvtGmfmdrI9Y8vmjbQiY18egucOZQlpLo6WzOlTlueO+GAS07atQBQVwFgq4UQ9Y+kSQZvIyZGefgHnuh6x22b7T4rP/2wxp7sTTez7m3pnPS+AxgZgjixvzdhA3tU4DXBBXvgVHSGaalJCLhN2QB1SNguPjsI7B5+hR5ZNMzP/gRLRMlED1cP4nkdX2ZxTN3lGVPFlf7TMyh1DPVcDZH6N7bkRySb7GSPmaXquzKgO7l8C5YIBtc
+X-MS-Exchange-Transport-Rules-Loop: 1
+X-Microsoft-Antispam-PRVS:
+	<FR1PR80MB18969AE661B22F778672D55CF9110@FR1PR80MB1896.lamprd80.prod.outlook.com>
+X-Exchange-Antispam-Report-Test:
+	UriScan:(81930007018389)(61388531626910)(121566674725114)(224945534805241)(166494164430575);
+X-Exchange-Antispam-Report-CFA-Test:
+	BCL:3;PCL:0;RULEID:(6040450)(601004)(701104)(2401047)(13024025)(8121501046)(1201001)(13018025)(13023025)(5005006)(13016025)(9101536074)(3002001)(93006095)(93005095)(10201501046)(6041248)(201703131423075)(201702281528075)(201703061421075)(20161123560025)(20161123564025)(20161123562025)(20161123555025)(6072148);SRVR:FR1PR80MB1896;BCL:3;PCL:0;RULEID:;SRVR:FR1PR80MB1896;
+X-Microsoft-Exchange-Diagnostics:
+	=?us-ascii?Q?1;FR1PR80MB1896;4:fSsTzLMzhUcH32X7uqj2IQzNB6K1IgXpZSpTqzHQN3?=
+ =?us-ascii?Q?AwkxwYBLjKf2uXnDMk2j29fZp7YE5Y4xWRUtQJQE8MaAatQ7T5FyRI0nQ2wk?=
+ =?us-ascii?Q?/og1kunRrAgPpaxXW3lKjrDxcWBiOsrjr9rdsIUSAMb40vTmuYHfB++2RQsF?=
+ =?us-ascii?Q?Ms2CXZsYNyk0wMlgfbT2neHwNGhrDLJOk41iiVY70tvwEAfxmEFaJccKbnlh?=
+ =?us-ascii?Q?1qbAofxcuAWlcPrVjSuFBMqn0nC4shbH6tokeqDamvNuAfDI1IGKJRewOycF?=
+ =?us-ascii?Q?AsR9J8PgfU2eKJtq0y8DtoJFOJ+t44fKDVBzjcsqnaFtCSgVYq+wKmEUjFAu?=
+ =?us-ascii?Q?2WwlCiSdTtzHPOmC0rusZwkeDEk12UAGdcSEOiQnWWVkxnuNEeweJ1H1v6ZI?=
+ =?us-ascii?Q?OtsH3Caw4QN19Rz/X5R13aZuDaX+uyxJ1irYvw22IWjfZbXn3le+ZDT2GiQo?=
+ =?us-ascii?Q?LqEd7jmw45ovMPW+fC7nL5biFEbF5Al3kQ8SGN3uQyWRhpca7AQGSz3BoppA?=
+ =?us-ascii?Q?7FctWjJwcz7KE+F1IdaCo1pJ+oKj+NDd/jizQLJ3wwtHFb5kKZSfqmUtzkDV?=
+ =?us-ascii?Q?piYCPPRS+kWLLcKk1WLbzl5xFDaa5LnHFdXuKPitI5b8lfPXO66kzPH/YFMY?=
+ =?us-ascii?Q?dwNevWqc10PcUq7FyKgSgCj45c3bFfelZPSP8oyr9/Z+mO73T7YMu1Mp4HU1?=
+ =?us-ascii?Q?V4ymjjL44Wvy9mBsywvToER2cFQVJG5nKPm3MrPwgeQ2pIwmCj6OKC5vI8Ne?=
+ =?us-ascii?Q?GHvc2sgiSLHcOouppWYb5hTqCvZ+bDkuROqxgiJinl67Qm5ryZoGWnDR9948?=
+ =?us-ascii?Q?SrjCrMYM7plxwEv9x9C9iCH1/2bIueUlji4n84HwUUKbg+gmW7LjQ8EYHaCd?=
+ =?us-ascii?Q?qaqjICv3NZ/WVF2Ece6+N/8JNx+OBT3lCNChnEE9U9LTG41gKmV3wq2PyR9A?=
+ =?us-ascii?Q?Carmz+N/+T1FTS55OkVWIYLS8dhEmA0I8nElQH/c0iNZjR27kZpJ3ABHAJtW?=
+ =?us-ascii?Q?bk7wLDpRp2NQtz40FPpKac5hN7XBglEbJV+mNVLrJQHw=3D=3D?=
+X-Forefront-PRVS: 0289B6431E
+X-Microsoft-Exchange-Diagnostics:
+	=?us-ascii?Q?1;FR1PR80MB1896;23:hU6pPHwQiDzsOE/uqCjOpFn9vdph5Ggd5h8RAwo4W?=
+ =?us-ascii?Q?4Z1AHtVPNr/r0xQH80cGpB7mY52/XOdar4fvQWM3F6lpxFjvFBvFLen6xZ+X?=
+ =?us-ascii?Q?QfZ8iHHlBnIURAKmk0a7YdqpVogsEz7EYq3IMCq6VRVbWYHLCPb5rmGrw9Vb?=
+ =?us-ascii?Q?1Yb41jFHBn+ooayPeTreHRYZcxJsXm3S5aanklfxfnNLwg1wePGn0E/PTMNi?=
+ =?us-ascii?Q?iJUWUOp+OSX0A5Pa/0hto7roDJMQeSyY2LjKx5gwjasPXMYDqYDw0upu9I6g?=
+ =?us-ascii?Q?0LGqALzbGNN0EL1NZHjIkKU5JL9rollUJrjqJI9ttF/OW/jLyKiRG7Mo4Rpi?=
+ =?us-ascii?Q?39vMXZ+hRIufcZR9ZdP5CECuxp9oQ7icx44BiG58PVLWC1xDEW/hLbrS0zHh?=
+ =?us-ascii?Q?gEwKvTHM4XTvb6oXo1vXmohecOdzeFaCfhGc+HTTCKHlM95b2GZUcodwqUGa?=
+ =?us-ascii?Q?7eECj8R1ZGET8r9d3ARGeMaAXUZPFNhmEyqU3mxpaMDocorUpCNKdcIm7Zb/?=
+ =?us-ascii?Q?+qMxgWM0FeXZwvQcwqdgs0dum3nKgGpqbkbo3jiSOweTd3vbLiW5sdD+hS+5?=
+ =?us-ascii?Q?Z2AWCITJmiD0bEr95VzOHgVD/CAs60ja94xKpRkXeKcsBzyoGuXE5XrIasCC?=
+ =?us-ascii?Q?aGCHE7fVsenSAUVBTxiN8wN8WwPLpd4gWVTCQ5+/mmRrpiSNAIarefAzad1i?=
+ =?us-ascii?Q?90Rmbg8j95kp6L4+i/mZFNN73HpqFTZYhWuf3NRbhbqKuSsTSK3FkAW3FZVT?=
+ =?us-ascii?Q?v0cfxiBqLHDijgHGfc+bA9kpzRyOxUi35ekYMg6KsoZprXbrx6T6Ot9JmYgU?=
+ =?us-ascii?Q?vohr+Dj7dP6LeZPqflV+2JFnMsLJoHLjOJEclTufptlW2l4llHcIbTilIPLb?=
+ =?us-ascii?Q?BCsaLyWol8g19NxFIXztm1msVUwXdP9z0DtuxX6xDWGl2yEehI/I6QXFYmF8?=
+ =?us-ascii?Q?toYt/eWl+hramHi6ZkvvZeLVmDKbdh7uPozzkDMrU3E2dvF2aykflVylZY33?=
+ =?us-ascii?Q?PaZ+B7VRCCQslH+tDsjcQtwBIFfm5jEFutseU3joMdYblM/KVAnIp17phCcB?=
+ =?us-ascii?Q?YXPZLqumI35OcvebBiqc5znOmONIVf5CB67T0jqg8baj0gvAu0Lv5CXAAJba?=
+ =?us-ascii?Q?UN8kY0wkSFO+XMf7fEansrLNRse97LxLP3JBwvtNOiDP8v2D9KmnLdGW2hMy?=
+ =?us-ascii?Q?eHx/VDeGEO6Drj15QrjueWk/j68TosggtPIcMOs2tlU6REXDiS9T50bucS6K?=
+ =?us-ascii?Q?I/wQqhPy8Z/VKcGAU9z/3YSF61rv7ohddnxanB3+11ZqNquE1jn9/y20fKl4?=
+ =?us-ascii?Q?hLbRA5AwPrxfy5hv9jl5hU0Qg4MXbvEHuSw5hxdPTJ3zs1v04KqN+whBBS/H?=
+ =?us-ascii?Q?/8NLR9B3q4uROR1IuJBRJ7OcS5s2jxnUs8UtBkkKGjmWXhwbxUsIVE4+j/rX?=
+ =?us-ascii?Q?9yZmL1xVEr+l4okkq6q+6wr4kYBEZwqw9CIea3kgNDfVPJqvZEOvVDVAS7N3?=
+ =?us-ascii?Q?z4XzWXGLkYJ3jp2DS8vmOLose0GGXvhJ8hJU4qEM4mn/eImVYP+7qXqd3ndd?=
+ =?us-ascii?Q?OvlLu7F9PrnrDYA+WzzPcAt0gnN2NTmWS651JqNHMIrbB7fOQryjcDeIdJWC?=
+ =?us-ascii?Q?uVqNovS95HDAGEbq/4fJWVWGliKs4tRHi1kzzQvUpDCFlxO5ppf0OzBXplya?=
+ =?us-ascii?Q?ohprUQMpFCstSiJeK3PPEnPJVmOBeIz4aoWMplxpHaGMMqv2V3caU927k+yz?=
+ =?us-ascii?Q?6WRDA1T?=
+X-Microsoft-Exchange-Diagnostics:
+	1;FR1PR80MB1896;6:x1/us7xgFbbbpdec13bB4iB05hoAfokg3iDetL2ft7et+tWO4hIVcgicez4wtGZslYxWaInEYDXfTTdviTR0m/5ahRD8Iz4kBPWSw5yBGZMFYSpX8mpxeXgsNwjRp5A3HIqgaZNj0b5jVSmSKdE7DPAjI/rb8Sjtwo9FxrJzfVWZs/vqyvatvk6Xo2jRJPZSPeCs5GtIZh7RB/poAmCRNlKx+kXTyqW1Q58XcW1mtl2/A/Fhr46OPV3dttDgYS5RctN7eOLA+d1RaHlEw3DYmBD+I/2aAL0eEg60wq2cVQWWTg1oEzbJuLgNGZvl2mRdT31X8GehsRcW4vm7E8Craf44o5mzvcJiWQbdOFBNaxynzlKYgzz89vVTp97mkynaWLXYKbgZv8yLn9Mp+v8yKi23GSnmUS4Txc70mQzYs3XBOXKOYFgkxotfM/aaQ3/DfkqDR9OJyFiwYWXdzB/LpFyhEAInJWlCHTDTHPy50zk2IPmWKKdeRj8tX/OjRXfwgK1lCNCSmGQukx0oWrM2lQ==;5:w8CpKC3T5Gdm0ST3P7hm9wqFrsTlUZchR4pBP5UboVg317tNHI1EI3XoToHUPLsayZ+KlYNSXci8zTf8GM1v1zPD5L99x+1O2K9I0PICoKbSI01WevCnoX888RvtDoZuOHbjCK0qW1qr1zPzJo2ERw==;24:uq/mQ+39rs+jAFfEGv8R9ok0lunye/pf5DLazkYmI1izQuCLwaZigz8mYKvTDMm6veruD8j+f7dUClKRAePDEac9oEAmOyKP7eUcL7SLkL4=
+X-ExternalRecipientOutboundConnectors: fec095e8-7415-4521-9abe-d8c80dedd2cf
+SpamDiagnosticOutput: 1:5
+SpamDiagnosticMetadata: :3
+X-Microsoft-Exchange-Diagnostics:
+	1;FR1PR80MB1896;7:EmvVhLmyjlGR41gaxvI9T1xrKC63tqW2L2UxztpHos2aZPgHcbU15NALbx5HD6OujCGsosUP8aTxaVLDXlIwwtlP++AV35V31KdTMvelWG+rATy1PQfqdNLCzVazzCl06Qg3X50bAoELsWSO/qeN/l7kkVxhMJCmzpR7a0JNLMRccorGxr0oBo+bo+jgshYjsIOXox9MZzlSrz3HDL3x9szhiaTrbAzgyYO8HjVZZzxcuftHk8OEwHLG7JrqFWVX21KtTXFT2KOZ83uZ14RoVDoqMPROwV2nTztRQIlOiej5zAKlPrYut8/DTMpow/poVgQtwy+teFEHKCQXJ9Kh/Q==
+X-OriginatorOrg: brasiltour.com
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 26 Apr 2017 17:07:49.9784
+ (UTC)
+X-MS-Exchange-CrossTenant-Id: fec095e8-7415-4521-9abe-d8c80dedd2cf
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: FR1PR80MB1896
+
+--blbrHJoPGijc=_?:
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+
+
+
+MultiplusVisualize no 
+http://view.emailpontosmultiplus.com.br/?qs=8e047aeeb83b24a82f4b1dd6519e59ad5625a07a89a3230ddaa92e2395253a8368e73d9e0688ca40d7456df658f2b919e6e03dc177f81afb396a4e940bf61447a94c15d49f3c0703 
+navegador 
+ 
+
+
+
+ 
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54594c68eff2b84ce8e88c2907999291f784fdf8a382e29b73407300a304ebd974a9d85f7be0042a7640edc3ec3739ea01ccd0837b3f112c5f 
+Roberta,
+Seu nÂ° Multiplus Ã© 05069833901Seu saldo: 1.548 pontos Multiplus
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e548e388f75b5a33dcd8efaf9a01fb7708836b46a705a97c76ec605a6139d83ce707bfb93b37a1fff6bd1c634102a6d278931e377966f554ce9 
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e5438418a6115e03c37785137a62ea5f3083bef06448abaf86a6c1828da65602b88ebb5424d738310a227951ada51cc5fc77b09f164fce20b72 
+
+ 
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54e7b1b947646e9c286d2e462643375fdde21d7062627d010eef2a61b9a09793408b2a3ef37bfd3782ffbb32908817f9d6659c079609351347 
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54aaad17fe0ffe2b843de0038753268279f5c95e8fe5ba5bb8975d0a6ac0f2eabc58cec48c47855b82b6a01898c48f7eb405c01469e66ffca4 
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54fd52ba1dc48c341f00c5d0ced03aa0a7f4722c3d3bb62318f4230c101e14cb980c9d9ccdf4c358099941da7305b99d7dbe49def4fd58044f 
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e545c3c238e24eb6eae66f9d0905f2941a84b23490e9f509f301aaf1605028766bf783851bad9c999b68817f2eb9c8227d15e044693331c12c4 
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54c9a04bfb32da062d974de5f7e32ab551809af8ba59bd5f9266af3c6544673abb975ec4655bd4571fa43a6da822ff8d7a5897b5b33d585738 
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54dc0cee95c793062c6ec637bb821aa3ad0af56bb64c357e3c8c9a803bfcdd16373a7cc9b6fa431b8ea63899971c474ab31d2ebf306d7bb9bb 
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e549080080ae1ac7b457b3302ec507f54364d640422ec05415f2763784bfc1819fa312766466de5d0ee91aa8cb9d2888c9eaf0a79207cad9845 
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e5448c71806fd9243c7839d326d12ddb4dcd766ff251d03fda997a0ba2124967f894f706600164e638d62bd5b3dfd67944ed80ac31cf9d39038 
+
+
+
+
+
+
+
+
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54f2e4c799b7934fd649ffdb09c6ab91023a423b79fb2e2b39fb4ee52bd61912be91c5f728cdc09586db2edd5b04cf25eb1bb9288631917339 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e548e36d5e1d1da23998fd4e86840e30d81275d2ad59cdf39ad74ee19b3010b206bcbba845c7a87a53736520eff52d1f828adb50085fca4d95c 
+Notebook Acer Celeron Quad Core
+
+
+
+
+
+ 
+
+ 
+
+
+ 
+
+
+
+ por
+
+pontos Multiplus
+ 
+
+ 
+
+
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e548e36d5e1d1da23998fd4e86840e30d81275d2ad59cdf39ad74ee19b3010b206bcbba845c7a87a53736520eff52d1f828adb50085fca4d95c 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e547daca2832885238a3a3acce3ec7713d1ba731a91ab63709766e0c7074644b3529420bc4d96f0a32b58ef7cf724be03f2ef5681db02fa7bbe 
+
+
+
+
+
+
+
+Cafeteira NescafÃ© Dolce Gusto Mini Me
+
+
+
+
+ 
+
+ 
+
+
+ 
+
+
+
+ por
+
+pontos Multiplus
+ 
+
+ 
+
+
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e547daca2832885238a3a3acce3ec7713d1ba731a91ab63709766e0c7074644b3529420bc4d96f0a32b58ef7cf724be03f2ef5681db02fa7bbe 
+
+
+
+
+
+
+
+
+
+
+
+
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54fcc95ed3e8d9810ae6b52daee6ceb6ef87b7ae11e77531461518e9d64c9fd66f2b054dec6e32efe4959c6cdc471fdfcf1900b77fba64197b 
+
+
+
+
+
+
+Fone de Ouvido AKG K404 - Preto
+
+
+
+
+
+
+ 
+
+ 
+
+
+ 
+
+
+
+ por
+
+pontos Multiplus
+ 
+
+ 
+
+
+
+
+
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54fcc95ed3e8d9810ae6b52daee6ceb6ef87b7ae11e77531461518e9d64c9fd66f2b054dec6e32efe4959c6cdc471fdfcf1900b77fba64197b 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54020ddd11e3a55d2718630ca654248a871ef7a3757b03ce74d082a70d608dc67fb94d4cfbd6a7f1facc8a7f2e8b70abdf776a5c9dd766a87d 
+
+
+
+
+
+
+
+Camera Canon Powershot 16.0MP LCD 3.0â€ Zoom de 30x e cartÃ£o 8GB
+
+
+
+
+ 
+
+ 
+
+
+ 
+
+
+
+ por
+
+pontos Multiplus
+ 
+
+ 
+
+
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54020ddd11e3a55d2718630ca654248a871ef7a3757b03ce74d082a70d608dc67fb94d4cfbd6a7f1facc8a7f2e8b70abdf776a5c9dd766a87d 
+
+
+
+
+
+
+
+
+
+
+
+
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e5464b2b70177fe5cec4a202d728e4f4713ac26a96ee9ac11816e99df881f5bc399199a209d70e40ce32a06555bc6c6e1c3a456f5a90deec65d 
+
+
+
+
+
+
+Escova Rotativa Mondial Ceramic Ãon Master ER 02 - 900 W
+
+
+
+
+
+
+ 
+
+ 
+
+
+ 
+
+
+
+ por
+
+pontos Multiplus
+ 
+
+ 
+
+
+
+
+
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e5464b2b70177fe5cec4a202d728e4f4713ac26a96ee9ac11816e99df881f5bc399199a209d70e40ce32a06555bc6c6e1c3a456f5a90deec65d 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54e80b7803541330485d7ceb5427534dc3e9e82b6d7d8e38772fa3c8ec1717df33c3ac92063be93042705acf043f1fd6d9d2efefd652764863 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54d5dfbb4b7243d50818fff428694db822a4957035ca3a04870ff7b44fd014530a8d52a671d6826e4cceb04986544496405476b6d47240c4f3 
+
+
+
+
+
+
+
+TÃªnis Nike Air Epic Speed Training
+
+
+
+
+ 
+
+ 
+
+
+ 
+
+
+
+ por
+
+pontos Multiplus
+ 
+
+ 
+
+
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54d5dfbb4b7243d50818fff428694db822a4957035ca3a04870ff7b44fd014530a8d52a671d6826e4cceb04986544496405476b6d47240c4f3 
+
+
+
+
+
+
+
+
+
+
+
+
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54eca44674b4914c02d6b8bbdd3bd6e2bb8ea6aa7e1c59952c72a6f19832534b2da10995a6b573048f6062622d95bf1e998338185ade81bc0b 
+
+
+
+
+
+
+Bolsa Adidas Shopper
+
+
+
+
+
+
+ 
+
+ 
+
+
+ 
+
+
+
+ por
+
+pontos Multiplus
+ 
+
+ 
+
+
+
+
+
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54eca44674b4914c02d6b8bbdd3bd6e2bb8ea6aa7e1c59952c72a6f19832534b2da10995a6b573048f6062622d95bf1e998338185ade81bc0b 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e5478be3168cc2b1dbbf54f810f90c5998f6042ddcbbaf5b41fc71a261299ed919169e67d7f86b38a99570411cd8f856bac224f9aa16efc4fda 
+
+
+
+
+
+
+
+Carolina Herrera Kit Perfume Feminino CH EDT 100ml + LoÃ§Ã£o Hidratante 100ml
+
+
+
+
+ 
+
+ 
+
+
+ 
+
+
+
+ por
+
+pontos Multiplus
+ 
+
+ 
+
+
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e5478be3168cc2b1dbbf54f810f90c5998f6042ddcbbaf5b41fc71a261299ed919169e67d7f86b38a99570411cd8f856bac224f9aa16efc4fda 
+
+
+
+
+
+
+
+
+
+
+
+
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e5487475ca8639ecf26c23f64dde97328e4f95a2c6daeb51bcc7f8e07bc674fd5584c8d28b62b14f823202bad8aa252f4d1e9289719cf2849db 
+
+
+
+
+
+
+RelÃ³gio Feminino Casio Digital Vintage
+
+
+
+
+
+
+ 
+
+ 
+
+
+ 
+
+
+
+ por
+
+pontos Multiplus
+ 
+
+ 
+
+
+
+
+
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e5487475ca8639ecf26c23f64dde97328e4f95a2c6daeb51bcc7f8e07bc674fd5584c8d28b62b14f823202bad8aa252f4d1e9289719cf2849db 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e547eb289a9b29b73b7cdc7956ae9bbad2b5a82233e5fb21beed1667be702aea6ddf334a82850276fdecf8a3c0080ec964e0322f50262d19daf 
+
+
+
+
+
+
+
+Creme Hidratante para peles mistas Anna Pegova - Hydratant Mixte - 40ml
+
+
+
+
+ 
+
+ 
+
+
+ 
+
+
+
+ por
+
+pontos Multiplus
+ 
+
+ 
+
+
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e547eb289a9b29b73b7cdc7956ae9bbad2b5a82233e5fb21beed1667be702aea6ddf334a82850276fdecf8a3c0080ec964e0322f50262d19daf 
+
+
+
+
+
+
+
+
+
+
+
+
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54ff69bb44fdad5b622236495ca0e0d9e59fb030004b39a4395b07272dc49478b61207d8a8cfc7214d943b3bced52cdf6703bcf2c7477960ee 
+
+
+
+
+
+
+Conj. Talheres Inox Tramontina 24 peÃ§as Polywood marrom
+
+
+
+
+
+
+ 
+
+ 
+
+
+ 
+
+
+
+ por
+
+pontos Multiplus
+ 
+
+ 
+
+
+
+
+
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54ff69bb44fdad5b622236495ca0e0d9e59fb030004b39a4395b07272dc49478b61207d8a8cfc7214d943b3bced52cdf6703bcf2c7477960ee 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54ab9a4845084bcf7bd9840350b1c2a6ece7fb72ff3bd38ad6c2cef6228103c3735e93b11b4a935d5598ce4a1dac1466d351957347bb91f05d 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54ea760a5541d5c63dc4611d412066a7172276268298d0533461451f3309a6d0be5caee1166e4ad4027c7d7b0e416f381cd6827dd0783a20f9 
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54eae786a537937dd64d2fd35102bea0a090ef2ca74fa0ac6438694ac169e35e37d2db6fe0323ac954953ba7a42532170768d8892c00901ea9 
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54f7044b492f0565076b9bcd6236a141dc270547af4ca125b43b3f370685fb520a87dfeec70ea5fdae6c0cb12a88461c62 
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e540b561e89845a15a68860d6191adc80cba6a90297a2e99b93afb34cd650c06ffd23a25db918444b9d802d5663b9ab441c 
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54f0009da054015ceece7c584ee4f19984fe5d51ee4643ce1e1d747fdc974d03271c84299e0ef18aa1a7295406c204a5f8 
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e546d72f9f8cc0bcd8e912dd958ec646bf16fb998477a1b6b243e45501a028a5a9b7dc1024eb813e269626bc3280154e70d 
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e5456ea4485b7fe3096b89dbba822500c700f8a772f4c619f3fdf27f009e98fe5a529f82513a05d3e90cd54adb518180667 
+
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54a9db9db282ac41594b8c39b5cbb02fa96f6ce3790219b9aeb49afb9337557805947d24635eddc7ac42f0383cfd7c4fe9 
+
+ 
+*Saldo atualizado em 25/04/2017 Ã s 00:16
+
+
+ A quantidade de pontos pode variar de acordo com a disponibilidade e demais condiÃ§Ãµes do produto ou serviÃ§o. Existindo diferenÃ§a na pontuaÃ§Ã£o no site no momento do resgate e no presente e-mail, serÃ¡ vÃ¡lida, para todos os efeitos, a pontuaÃ§Ã£o do site.
+
+
+TransferÃªncia de bancos: PromoÃ§Ã£o vÃ¡lida exclusivamente para Participantes Multiplus, que realizarem PromoÃ§Ã£o vÃ¡lida exclusivamente para Participantes Multiplus, que realizarem a transferÃªncia de pontos das InstituiÃ§Ãµes Financeiras parceiras elegÃ­veis para a Multiplus durante o perÃ­odo promocional, vigente de 24/04/2017 a 28/04/2017. A PromoÃ§Ã£o consiste na bonificaÃ§Ã£o de 30% (trinta por cento) de pontos bÃ´nus sobre cada transaÃ§Ã£o de acÃºmulo, resultante da transferÃªncia para a Rede MULTIPLUS dos pontos do Programa de Relacionamento das InstituiÃ§Ãµes Financeiras Parceiras elegÃ­veis, durante o perÃ­odo promocional. NÃ£o sÃ£o elegÃ­veis a essa PromoÃ§Ã£o os pontos decorrentes dos CartÃµes Banco do Brasil, Bradesco, Membership Rewards, Itaucard, Credicard, Multiplus Itaucard e TAM Itaucard. Eventuais bonificaÃ§Ãµes concedidas pelas InstituiÃ§Ãµes Financeiras Parceiras nÃ£o serÃ£o contabilizadas para o cÃ¡lculo da bonificaÃ§Ã£o a ser concedida pela MULTIPLUS. Os participantes que fizerem
+ parte do Clube Multiplus receberÃ£o a bonificaÃ§Ã£o adicional de 5% (cinco por cento) de pontos sobre as transferÃªncias de pontos das instituiÃ§Ãµes financeiras parceiras participantes realizadas durante o perÃ­odo promocional. Os participantes que tiverem pagamentos em atraso ou irregularidades no Clube Multiplus nÃ£o serÃ£o elegÃ­veis a bonificaÃ§Ã£o de 5% (cinco por cento). Para participar da promoÃ§Ã£o Ã© necessÃ¡rio ter cadastro ativo na Multiplus e aceitar o Regulamento disponÃ­vel no site https://promo.pontosmultiplus.com.br/bancos30 antes da solicitaÃ§Ã£o de transferÃªncia de Pontos. O aceite ao Regulamento Ã© obrigatÃ³rio. Os participantes que nÃ£o efetuarem o aceite no Regulamento nÃ£o serÃ£o elegÃ­veis a promoÃ§Ã£o. PromoÃ§Ã£o nÃ£o cumulativa com outras promoÃ§Ãµes vigentes na Multiplus ou de outra InstituiÃ§Ã£o Financeira parceira, havendo duas ou mais promoÃ§Ãµes ativas sobre os mesmos pontos acumulados, serÃ¡ concedida apenas uma bonificaÃ§Ã£o. A bonificaÃ§Ã£o serÃ¡ creditada na conta
+ Multiplus do participante atÃ© 23/05/2017. A InstituiÃ§Ã£o Financeira Parceira poderÃ¡ ter regras especÃ­ficas para transferÃªncia de pontos, devendo o participante consultar tais regras e condiÃ§Ãµes para transferÃªncia de pontos junto a respectiva InstituiÃ§Ã£o Financeira. Consulte o Regulamento da promoÃ§Ã£o em Regulamento e as regras gerais para acÃºmulo e resgate de pontos em www.pontosmultiplus.com.br.
+
+
+
+Uma vez solicitada a conversÃ£o de pontos Multiplus em produtos do Parceiro, com ou sem complemento de compra de pontos para a finalizaÃ§Ã£o do resgate, disponÃ­vel para determinados parceiros da Rede, nÃ£o haverÃ¡ a possibilidade de cancelamento e/ou devoluÃ§Ã£o dos pontos Multiplus. As caracterÃ­sticas do produto (voltagem, cor, tamanho, marca, etc.) devem ser verificadas antes da conclusÃ£o do resgate. O Parceiro nÃ£o realiza troca de produto ou devoluÃ§Ã£o de pontos por resgates realizados equivocadamente. Ã‰ fundamental que haja alguÃ©m no local constante do Pedido para receber o produto. ApÃ³s a 3Âª tentativa de entrega, sem sucesso, o pedido serÃ¡ cancelado, sem direito Ã  devoluÃ§Ã£o dos pontos Multiplus. O conteÃºdo e qualidade dos produtos sÃ£o de inteira e exclusiva responsabilidade do Parceiro.
+ Consulte locais aceitos e prazos de entrega no site do Parceiro e na confirmaÃ§Ã£o do Pedido. O Parceiro nÃ£o efetua entregas para endereÃ§os de caixas postais. Sempre inclua o destinatÃ¡rio, endereÃ§o completo e CPF de entrega. Consulte todas as regras e condiÃ§Ãµes para acÃºmulo e resgate de pontos Multiplus no site www.pontosmultiplus.com.br. Para mais informaÃ§Ãµes, entre em contato atravÃ©s dos canais Multiplus. As imagens sÃ£o meramente ilustrativas. Os preÃ§os podem sofrer alteraÃ§Ãµes sem aviso prÃ©vio. Os estoques podem ser limitados.
+
+
+
+Para acumular os pontos, o Participante deverÃ¡ ter cadastro na Rede Multiplus. Os pontos acumulados na Multiplus possuem validade de 02 (dois) anos contados da data do acÃºmulo. O prazo para o crÃ©dito dos pontos acumulados na conta Multiplus do Participante pode variar de acordo com cada Parceiro. Os parceiros da Rede Multiplus podem estabelecer deflator na transferÃªncia de pontos, devendo o Participante verificar as regras e condiÃ§Ãµes junto ao Parceiro. A Multiplus nÃ£o possui qualquer gerenciamento nos programas de fidelidade dos Parceiros da Rede. A Multiplus irÃ¡ realizar o crÃ©dito dos pontos conforme informaÃ§Ãµes dos Parceiros, nÃ£o se responsabilizando por informaÃ§Ãµes incorretas. Uma vez realizado o acÃºmulo na Rede Multiplus nÃ£o serÃ¡ possÃ­vel o cancelamento ou devoluÃ§Ã£o de pontos para
+ outros programas de fidelidade. Os pontos acumulados nÃ£o poderÃ£o ser objeto de venda, cessÃ£o ou permuta, bem como nÃ£o poderÃ£o ser convertidos em dinheiro. Pontos acumulados indevidamente por erro sistÃªmico ou humano poderÃ£o ser estornados pela Multiplus, sem aviso prÃ©vio.
+
+
+
+
+
+ Para garantir que nossos comunicados cheguem em sua caixa de entrada e vocÃª fique por dentro de todas as novidades, adicione o e-mail novidades@emailpontosmultiplus.com.br ao seu catÃ¡logo de endereÃ§os. A Multiplus respeita a sua privacidade.
+
+
+
+Multiplus S/A | Alameda Xingu, 350, 15Â°e 17Â° andar, CondomÃ­nio ITower Iguatemi Alphaville , CEP: 06455-911, Alphaville Industrial, Barueri - SP. 
+
+
+ConheÃ§a 
+http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e5454080efe46b94bfd2311b76951cf75e2634a44cffe616ebbd8a8021dfdd7b6298eddb88bbadd23ca7ca6b3876d30f760 
+aqui  nossa polÃ­tica de privacidade
+
+
+Se vocÃª nÃ£o deseja mais receber nossos e-mails, cancele sua inscriÃ§Ã£o 
+http://pages.emailpontosmultiplus.com.br/page.aspx?qs=3935619f7de112efca651f0b35f46882a37fb682a9b4ae74b2f505e4da898478a1bea7764dd28394ba09fa85ac563d84014b1b7e333f4880a9bb65f3337cebe3debc3fa96a794f10c1f68151fef7b22903a241ad8979972e699a1eddfe10a6b96b8fd1da65ad5ea9 
+aqui .
+
+
+
+
+
+
+
+
+--blbrHJoPGijc=_?:
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+<html><body><style type="text/css">
+div.preheader 
+{ display: none !important; } 
+</style>
+<div class="preheader" style="font-size: 1px; display: none !important;">E+: Transfira os pontos do seu cartÃ£o e ganhe 30% de bÃ´nus</div>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiplus</title>
+</head>
+
+<style type="text/css">
+master{table-layout: fixed;}
+</style> 
+
+<body bgcolor="#f2f2f2">
+	
+        <img src="https://pixel.app.returnpath.net/pixel.gif?r=fd19874e19abc5d08cc3108cf8ee892984708f72" />
+    
+    
+        <img src="https://pixel.inbox.exacttarget.com/pixel.gif?r=fd19874e19abc5d08cc3108cf8ee892984708f72"/>
+
+
+    <table class="master" border="0" cellpadding="0" cellspacing="0" bgcolor="#f2f2f2" width="100%" style="padding:0 20px 0 20px;">
+
+        <tr>
+            <td align="center" style="padding:4px 0 7px 0;"><font style="font-family:Arial;font-size:11px;color:#929292;">Visualize no <a href="http://view.emailpontosmultiplus.com.br/?qs=8e047aeeb83b24a82f4b1dd6519e59ad5625a07a89a3230ddaa92e2395253a8368e73d9e0688ca40d7456df658f2b919e6e03dc177f81afb396a4e940bf61447a94c15d49f3c0703" style="color:#929292;">navegador</a></font></td>
+        </tr>
+
+        <tr>
+            <td align="center">
+                <table border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" width="690">
+                    <tr>
+                        <td style="font-size:0;line-height:0;" height="20">&nbsp;</td>
+                    </tr>
+                    <!--header-->
+                    
+
+<!--header-->
+<tr>
+    <td style="font-size:0;line-height:0;" height="20">&nbsp;</td>
+</tr>
+<tr>
+    <td>
+        <table border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <td align="left" valign="middle" style="padding:0 0 0 20px;">
+                    <a target="_blank" href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54594c68eff2b84ce8e88c2907999291f784fdf8a382e29b73407300a304ebd974a9d85f7be0042a7640edc3ec3739ea01ccd0837b3f112c5f">
+                        <img alt="Multiplus" src="http://image.emailpontosmultiplus.com.br/lib/fe9013727561027477/m/4/logo_2016.jpg" title="Multiplus" border="0" style="display:block;" />
+                    </a>
+                </td>
+                <td align="left" style="padding:0 0 0 17px;">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td align="left">
+                                <font style="font-family:Arial;font-size:14px;color:#02a0e4;font-weight:bold;">Roberta,</font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="padding:2px 0 0 0;">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td align="left">
+                                            <font style="font-family:Arial;font-size:12px;color:#6d6e71;">Seu nÂ° Multiplus Ã© <span style="font-size:12px;font-weight:bold;">05069833901</span></font>
+                                        </td>
+                                        <td align="left" style="padding:0 0 0 16px;">
+                                            <font style="font-family:Arial;font-size:12px;color:#6d6e71;">Seu saldo: <span style="font-size:12px;font-weight:bold;">1.548</span> pontos Multiplus</font>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding:6px 0 0 0;">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td align="left" valign="middle">
+                                            <a target="_blank" href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e548e388f75b5a33dcd8efaf9a01fb7708836b46a705a97c76ec605a6139d83ce707bfb93b37a1fff6bd1c634102a6d278931e377966f554ce9">
+                                                <img alt="Seu extrato" src="http://image.emailpontosmultiplus.com.br/lib/fe9513727561007c72/m/1/bt-extrato.jpg" title="Seu extrato" border="0" style="display:block;" />
+                                            </a>
+                                        </td>
+                                        <td align="left" valign="middle" style="padding:0 0 0 10px;">
+                                            <a target="_blank" href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e5438418a6115e03c37785137a62ea5f3083bef06448abaf86a6c1828da65602b88ebb5424d738310a227951ada51cc5fc77b09f164fce20b72">
+                                                <img alt="Recuperar senha" src="http://image.emailpontosmultiplus.com.br/lib/fe9513727561007c72/m/1/bt-senha.jpg" title="Recuperar senha" border="0" style="display:block;" />
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+<tr>
+    <td style="font-size:0;line-height:0;" height="20">&nbsp;</td>
+</tr>
+<tr>
+    <td>
+        <table border="0" cellpadding="0" cellspacing="0" >
+            <tr>
+                <td align="left" valign="middle">
+                    <a target="_blank" href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54e7b1b947646e9c286d2e462643375fdde21d7062627d010eef2a61b9a09793408b2a3ef37bfd3782ffbb32908817f9d6659c079609351347">
+                        <img alt="O que Ã© multiplus" src="http://image.emailpontosmultiplus.com.br/lib/fe9013727561027477/m/17/oque_v3.jpg" title="O que Ã© multiplus" border="0" style="display:block;" />
+                    </a>
+                </td>
+                <td align="left" valign="middle">
+                    <a target="_blank" href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54aaad17fe0ffe2b843de0038753268279f5c95e8fe5ba5bb8975d0a6ac0f2eabc58cec48c47855b82b6a01898c48f7eb405c01469e66ffca4">
+                        <img alt="Junte pontos" src="http://image.emailpontosmultiplus.com.br/lib/fe9013727561027477/m/17/junte_v3.jpg" title="Junte pontos" border="0" style="display:block;" />
+                    </a>
+                </td>
+                <td align="left" valign="middle">
+                    <a target="_blank" href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54fd52ba1dc48c341f00c5d0ced03aa0a7f4722c3d3bb62318f4230c101e14cb980c9d9ccdf4c358099941da7305b99d7dbe49def4fd58044f">
+                        <img alt="Troque pontos" src="http://image.emailpontosmultiplus.com.br/lib/fe9013727561027477/m/17/troque_v3.jpg" title="Troque pontos" border="0" style="display:block;" />
+                    </a>
+                </td>
+                <td align="left" valign="middle">
+                    <a target="_blank" href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e545c3c238e24eb6eae66f9d0905f2941a84b23490e9f509f301aaf1605028766bf783851bad9c999b68817f2eb9c8227d15e044693331c12c4">
+                        <img alt="Passagens aÃ©reas" src="http://image.emailpontosmultiplus.com.br/lib/fe9013727561027477/m/17/passagens_v3.jpg" title="Passagens aÃ©reas" border="0" style="display:block;" />
+                    </a>
+                </td>
+                
+            </tr>
+        </table>
+    </td>
+</tr>
+<tr>
+    <td>
+        <table border="0" cellpadding="0" cellspacing="0" >
+            <tr>
+                <td align="left" valign="middle">
+                    <a target="_blank" href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54c9a04bfb32da062d974de5f7e32ab551809af8ba59bd5f9266af3c6544673abb975ec4655bd4571fa43a6da822ff8d7a5897b5b33d585738">
+                        <img alt="CartÃ£o Multiplus" src="http://image.emailpontosmultiplus.com.br/lib/fe9013727561027477/m/17/cartao_v3.jpg" title="CartÃ£o Multiplus" border="0" style="display:block;" />
+                    </a>
+                </td>
+                <td align="left" valign="middle">
+                    <a target="_blank" href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54dc0cee95c793062c6ec637bb821aa3ad0af56bb64c357e3c8c9a803bfcdd16373a7cc9b6fa431b8ea63899971c474ab31d2ebf306d7bb9bb">
+                        <img alt="Clube Multiplus" src="http://image.emailpontosmultiplus.com.br/lib/fe9013727561027477/m/17/clube_v3.jpg" title="Clube Multiplus" border="0" style="display:block;" />
+                    </a>
+                </td>
+                <td align="left" valign="middle">
+                    <a target="_blank" href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e549080080ae1ac7b457b3302ec507f54364d640422ec05415f2763784bfc1819fa312766466de5d0ee91aa8cb9d2888c9eaf0a79207cad9845">
+                        <img alt="Compre pontos" src="http://image.emailpontosmultiplus.com.br/lib/fe9013727561027477/m/17/compre_v3.jpg" title="Compre Pontos" border="0" style="display:block;" />
+                    </a>
+                </td>
+                <td align="left" valign="middle">
+                    <a target="_blank" href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e5448c71806fd9243c7839d326d12ddb4dcd766ff251d03fda997a0ba2124967f894f706600164e638d62bd5b3dfd67944ed80ac31cf9d39038">
+                        <img alt="Hoteis" src="http://image.emailpontosmultiplus.com.br/lib/fe9013727561027477/m/17/hoteis_v3.jpg" title="Hoteis" border="0" style="display:block;" />
+                    </a>
+                </td>
+                
+            </tr>
+        </table>
+    </td>
+</tr>
+<!--header-->
+                    <!--header-->
+                    
+
+                    <!-- TESTE RENE -->
+                    <!-- TESTE RENE -->
+                    
+                    <!--destaque-->
+
+                    <tr>
+                        <td>
+
+                            <a href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54f2e4c799b7934fd649ffdb09c6ab91023a423b79fb2e2b39fb4ee52bd61912be91c5f728cdc09586db2edd5b04cf25eb1bb9288631917339" target="_blank"><img src="http://image.emailpontosmultiplus.com.br/lib/fe9013727561027477/m/20/2017-04-24-DestaqueEmail-Bonus30.jpg" alt="" style="display:block;" title="" border="0" /></a>
+                            
+                        </td>
+                    </tr>
+
+                    <!--/destaque-->
+                    <!--espaÃ§o entre os box-->
+                    <tr>
+                        <td bgcolor="#f2f2f2" style="font-size:0;line-height:0;" height="10">&nbsp;</td>
+                    </tr>
+                    <!--/espaÃ§o entre os box-->
+                    
+
+                    
+
+                    <!-- TESTE RENE -->
+                    <!-- TESTE RENE -->
+                    
+
+                    <!--Imprimir TEMPLATE TIPO_OFERTA UNICA-->
+                    
+                   <!--oferta destaque-->
+                <tr>
+                    <td align="center">
+                        <table cellpadding="0" cellspacing="0" width="690">
+                            <tr>
+                                <td>
+                                    <table border="0" cellpadding="0" cellspacing="0" width="690">
+                                        <tr>
+                                            <td style="padding-top:7px;padding-bottom:7px;padding-left:53px;"><a href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e548e36d5e1d1da23998fd4e86840e30d81275d2ad59cdf39ad74ee19b3010b206bcbba845c7a87a53736520eff52d1f828adb50085fca4d95c" target="_blank"><img alt="" src="http://static.wmobjects.com.br/imgres/arquivos/ids/8254047-1200-1200" width="200" height="200" title="" border="0" style="display:block;"/></a></td>
+                                            <td width="400" bgcolor="#ffffff" align="left" valign="top" style="padding:50px 0 24px 50px;">
+                                                <table border="0" cellpadding="0" cellspacing="0">
+                                                    <tr>
+                                                        <td><font style="font-family:'Trebuchet MS';font-size:22px;color:#858688; font-weight:bold;">Notebook Acer Celeron Quad Core</font></td>
+                                                    </tr>
+                                                    <tr>
+													
+                                                    <td>
+                                                            <table border="0" cellpadding="0" cellspacing="0">
+                                                                <tr>
+                                                                    <td style="padding-top:10px;">
+
+																	    
+                                                                    
+																	<!--LAYOUT DE POR-->
+                                                                       
+<font style="font-family:'Trebuchet MS';font-size:14px;color:#858688;">
+
+<!--LAYOUT 2 SEM TEXTO APENAS O BOTAO-->
+     
+
+<!--LAYOUT 2 TEXTO DE POR-->
+     
+
+<!--LAYOUT 3 APENAS O TEXTO POR-->
+  
+   por<br /><span style="font-size:34px;font-weight:bold;color:#F00;"> 81.740</span><br />pontos Multiplus
+     
+  
+   
+</font>
+																	
+                                                                    </td>
+                                                                    <td style="padding:38px 0 0 25px;"><a href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e548e36d5e1d1da23998fd4e86840e30d81275d2ad59cdf39ad74ee19b3010b206bcbba845c7a87a53736520eff52d1f828adb50085fca4d95c" target="_blank"><img alt="Resgate Agora" src="http://image.emailpontosmultiplus.com.br/lib/fe9013727561027477/m/1/20150224-Teste-Dinamico-cta.jpg" title="Resgate Agora" border="0" style="display:block;" /></a></td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+
+                                                     
+
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!--/oferta destaque-->
+<!--espaÃ§o entre os box-->
+                <tr>
+                    <td bgcolor="#f2f2f2" style="font-size:0;line-height:0;" height="2">&nbsp;</td>
+                </tr>
+                <!--/espaÃ§o entre os box-->
+
+                    
+
+
+                    
+
+                    
+
+                    <!-- TESTE RENE -->
+                    <!-- TESTE RENE -->
+                    
+                    <!--Imprimir TEMPLATE TIPO_OFERTA DUPLA-->
+                    <!-- old =ContentArea(140861)= -->
+                    
+
+<!--PRODUTO 1-->
+<tr>
+    <td align="center">
+        <table cellpadding="0" cellspacing="0" width="690" bgcolor="#FFFFFF">
+            <tr>
+                <td>
+                    <table border="0" cellpadding="0" cellspacing="0" width="344">
+                        <tr>
+                            <td align="center" valign="middle" width="344" height="265">
+                                <a href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e547daca2832885238a3a3acce3ec7713d1ba731a91ab63709766e0c7074644b3529420bc4d96f0a32b58ef7cf724be03f2ef5681db02fa7bbe" target="_blank">
+                                    
+                                    <img alt="" src="http://static.wmobjects.com.br/imgres/arquivos/ids/2874108-1200-1200" width="240" height="240" title="" border="0" style="display: block;" />
+                                    
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="324" bgcolor="#ffffff" align="left" valign="top" style="padding: 0 0 15px 20px;">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td valign="top" height="50"><font style="font-family: 'Trebuchet MS'; font-size: 20px; color: #858688; font-weight: bold;">Cafeteira NescafÃ© Dolce Gusto Mini Me</font></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <table border="0" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td style="padding-top: 10px;">
+                                                        
+
+                                                        <!--LAYOUT DE POR-->
+                                                           
+<font style="font-family:'Trebuchet MS';font-size:14px;color:#858688;">
+
+<!--LAYOUT 2 SEM TEXTO APENAS O BOTAO-->
+     
+
+<!--LAYOUT 2 TEXTO DE POR-->
+  
+   de <span style="color:#F00; text-decoration:line-through;"> 26.580</span> por<br /><span style="font-size:34px;font-weight:bold;color:#F00;"> 21.980</span><br />pontos Multiplus
+     
+
+<!--LAYOUT 3 APENAS O TEXTO POR-->
+     
+  
+   
+</font>
+
+                                                    </td>
+                                                    <td style="padding: 38px 0 0 20px;">
+                                                        <a href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e547daca2832885238a3a3acce3ec7713d1ba731a91ab63709766e0c7074644b3529420bc4d96f0a32b58ef7cf724be03f2ef5681db02fa7bbe" target="_blank">
+                                                            <img alt="Resgate Agora" src="http://image.emailpontosmultiplus.com.br/lib/fe9013727561027477/m/1/20150224-Teste-Dinamico-cta.jpg" title="Resgate Agora" border="0" style="display: block;" />
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+
+                                        
+
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </td>
+                <!--PRODUTO 1-->
+                
+
+                <!--Produto 2-->
+
+                <td bgcolor="#f2f2f2" style="padding-left: 2px;"></td>
+                <td>
+                    <table border="0" cellpadding="0" cellspacing="0" width="344">
+                        <tr>
+                            <td align="center" valign="middle" width="344" height="265">
+                                <a href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54fcc95ed3e8d9810ae6b52daee6ceb6ef87b7ae11e77531461518e9d64c9fd66f2b054dec6e32efe4959c6cdc471fdfcf1900b77fba64197b" target="_blank">
+                                    
+                                    <img alt="" src="http://static.wmobjects.com.br/imgres/arquivos/ids/8914293-1200-1200" width="240" height="240" title="" border="0" style="display: block;" />
+                                    
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="324" bgcolor="#ffffff" align="left" valign="top" style="padding: 0 0 15px 20px;">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td valign="top" height="50"><font style="font-family: 'Trebuchet MS'; font-size: 20px; color: #858688; font-weight: bold;">Fone de Ouvido AKG K404 - Preto</font></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <table border="0" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                   <td>
+                                                        
+
+                                                        
+
+                                                        <!--LAYOUT DE POR-->
+                                                           
+<font style="font-family:'Trebuchet MS';font-size:14px;color:#858688;">
+
+<!--LAYOUT 2 SEM TEXTO APENAS O BOTAO-->
+     
+
+<!--LAYOUT 2 TEXTO DE POR-->
+  
+   de <span style="color:#F00; text-decoration:line-through;"> 6.600</span> por<br /><span style="font-size:34px;font-weight:bold;color:#F00;"> 4.240</span><br />pontos Multiplus
+     
+
+<!--LAYOUT 3 APENAS O TEXTO POR-->
+     
+  
+   
+</font>
+
+                                                        
+                                                    </td>
+                                                    
+                                                    <td style="padding: 38px 0 0 20px;">
+                                                        <a href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54fcc95ed3e8d9810ae6b52daee6ceb6ef87b7ae11e77531461518e9d64c9fd66f2b054dec6e32efe4959c6cdc471fdfcf1900b77fba64197b" target="_blank">
+                                                            <img alt="Resgate Agora" src="http://image.emailpontosmultiplus.com.br/lib/fe9013727561027477/m/1/20150224-Teste-Dinamico-cta.jpg" title="Resgate Agora" border="0" style="display: block;" />
+                                                        </a>
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                            </table>
+                                        </td>
+
+                                        
+
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </td>
+
+            </tr>
+        </table>
+    </td>
+</tr>
+
+<!--espaÃ§o entre os box-->
+<tr>
+    <td bgcolor="#f2f2f2" style="font-size: 0; line-height: 0;" height="2">&nbsp;</td>
+</tr>
+<!--/espaÃ§o entre os box-->
+
+
+
+
+                    
+
+                    
+
+                    <!-- TESTE RENE -->
+                    <!-- TESTE RENE -->
+                    
+
+                    
+
+                    <!-- TESTE RENE -->
+                    <!-- TESTE RENE -->
+                    
+                    <!--Imprimir TEMPLATE TIPO_OFERTA DUPLA-->
+                    <!-- old =ContentArea(140861)= -->
+                    
+
+<!--PRODUTO 1-->
+<tr>
+    <td align="center">
+        <table cellpadding="0" cellspacing="0" width="690" bgcolor="#FFFFFF">
+            <tr>
+                <td>
+                    <table border="0" cellpadding="0" cellspacing="0" width="344">
+                        <tr>
+                            <td align="center" valign="middle" width="344" height="265">
+                                <a href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54020ddd11e3a55d2718630ca654248a871ef7a3757b03ce74d082a70d608dc67fb94d4cfbd6a7f1facc8a7f2e8b70abdf776a5c9dd766a87d" target="_blank">
+                                    
+                                    <img alt="" src="https://email.pontofrio.com.br/Control/ArquivoExibir.aspx?IdArquivo=104742467" width="240" height="240" title="" border="0" style="display: block;" />
+                                    
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="324" bgcolor="#ffffff" align="left" valign="top" style="padding: 0 0 15px 20px;">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td valign="top" height="50"><font style="font-family: 'Trebuchet MS'; font-size: 20px; color: #858688; font-weight: bold;">Camera Canon Powershot 16.0MP LCD 3.0â€ Zoom de 30x e cartÃ£o 8GB</font></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <table border="0" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td style="padding-top: 10px;">
+                                                        
+
+                                                        <!--LAYOUT DE POR-->
+                                                           
+<font style="font-family:'Trebuchet MS';font-size:14px;color:#858688;">
+
+<!--LAYOUT 2 SEM TEXTO APENAS O BOTAO-->
+     
+
+<!--LAYOUT 2 TEXTO DE POR-->
+  
+   de <span style="color:#F00; text-decoration:line-through;"> 46.170</span> por<br /><span style="font-size:34px;font-weight:bold;color:#F00;"> 39.620</span><br />pontos Multiplus
+     
+
+<!--LAYOUT 3 APENAS O TEXTO POR-->
+     
+  
+   
+</font>
+
+                                                    </td>
+                                                    <td style="padding: 38px 0 0 20px;">
+                                                        <a href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54020ddd11e3a55d2718630ca654248a871ef7a3757b03ce74d082a70d608dc67fb94d4cfbd6a7f1facc8a7f2e8b70abdf776a5c9dd766a87d" target="_blank">
+                                                            <img alt="Resgate Agora" src="http://image.emailpontosmultiplus.com.br/lib/fe9013727561027477/m/1/20150224-Teste-Dinamico-cta.jpg" title="Resgate Agora" border="0" style="display: block;" />
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+
+                                        
+
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </td>
+                <!--PRODUTO 1-->
+                
+
+                <!--Produto 2-->
+
+                <td bgcolor="#f2f2f2" style="padding-left: 2px;"></td>
+                <td>
+                    <table border="0" cellpadding="0" cellspacing="0" width="344">
+                        <tr>
+                            <td align="center" valign="middle" width="344" height="265">
+                                <a href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e5464b2b70177fe5cec4a202d728e4f4713ac26a96ee9ac11816e99df881f5bc399199a209d70e40ce32a06555bc6c6e1c3a456f5a90deec65d" target="_blank">
+                                    
+                                    <img alt="" src="https://email.pontofrio.com.br/Control/ArquivoExibir.aspx?IdArquivo=19829033" width="240" height="240" title="" border="0" style="display: block;" />
+                                    
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="324" bgcolor="#ffffff" align="left" valign="top" style="padding: 0 0 15px 20px;">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td valign="top" height="50"><font style="font-family: 'Trebuchet MS'; font-size: 20px; color: #858688; font-weight: bold;">Escova Rotativa Mondial Ceramic Ãon Master ER 02 - 900 W</font></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <table border="0" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                   <td>
+                                                        
+
+                                                        
+
+                                                        <!--LAYOUT DE POR-->
+                                                           
+<font style="font-family:'Trebuchet MS';font-size:14px;color:#858688;">
+
+<!--LAYOUT 2 SEM TEXTO APENAS O BOTAO-->
+     
+
+<!--LAYOUT 2 TEXTO DE POR-->
+  
+   de <span style="color:#F00; text-decoration:line-through;"> 9.810</span> por<br /><span style="font-size:34px;font-weight:bold;color:#F00;"> 6.830</span><br />pontos Multiplus
+     
+
+<!--LAYOUT 3 APENAS O TEXTO POR-->
+     
+  
+   
+</font>
+
+                                                        
+                                                    </td>
+                                                    
+                                                    <td style="padding: 38px 0 0 20px;">
+                                                        <a href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e5464b2b70177fe5cec4a202d728e4f4713ac26a96ee9ac11816e99df881f5bc399199a209d70e40ce32a06555bc6c6e1c3a456f5a90deec65d" target="_blank">
+                                                            <img alt="Resgate Agora" src="http://image.emailpontosmultiplus.com.br/lib/fe9013727561027477/m/1/20150224-Teste-Dinamico-cta.jpg" title="Resgate Agora" border="0" style="display: block;" />
+                                                        </a>
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                            </table>
+                                        </td>
+
+                                        
+
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </td>
+
+            </tr>
+        </table>
+    </td>
+</tr>
+
+<!--espaÃ§o entre os box-->
+<tr>
+    <td bgcolor="#f2f2f2" style="font-size: 0; line-height: 0;" height="2">&nbsp;</td>
+</tr>
+<!--/espaÃ§o entre os box-->
+
+
+
+
+                    
+
+                    
+
+                    <!-- TESTE RENE -->
+                    <!-- TESTE RENE -->
+                    
+
+                    
+
+                    <!-- TESTE RENE -->
+                    <!-- TESTE RENE -->
+                    
+                    <!--destaque-->
+
+                    <tr>
+                        <td>
+
+                            <a href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54e80b7803541330485d7ceb5427534dc3e9e82b6d7d8e38772fa3c8ec1717df33c3ac92063be93042705acf043f1fd6d9d2efefd652764863" target="_blank"><img src="http://image.emailpontosmultiplus.com.br/lib/fe9013727561027477/m/20/Box-DiaMaes-LoccitaneBrasil.png" alt="" style="display:block;" title="" border="0" /></a>
+                            
+                        </td>
+                    </tr>
+
+                    <!--/destaque-->
+                    <!--espaÃ§o entre os box-->
+                    <tr>
+                        <td bgcolor="#f2f2f2" style="font-size:0;line-height:0;" height="10">&nbsp;</td>
+                    </tr>
+                    <!--/espaÃ§o entre os box-->
+                    
+
+                    
+
+                    <!-- TESTE RENE -->
+                    <!-- TESTE RENE -->
+                    
+                    <!--Imprimir TEMPLATE TIPO_OFERTA DUPLA-->
+                    <!-- old =ContentArea(140861)= -->
+                    
+
+<!--PRODUTO 1-->
+<tr>
+    <td align="center">
+        <table cellpadding="0" cellspacing="0" width="690" bgcolor="#FFFFFF">
+            <tr>
+                <td>
+                    <table border="0" cellpadding="0" cellspacing="0" width="344">
+                        <tr>
+                            <td align="center" valign="middle" width="344" height="265">
+                                <a href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54d5dfbb4b7243d50818fff428694db822a4957035ca3a04870ff7b44fd014530a8d52a671d6826e4cceb04986544496405476b6d47240c4f3" target="_blank">
+                                    
+                                    <img alt="" src="https://static1.netshoes.net/Produtos/72/D12-2879-172/D12-2879-172_zoom1.jpg" width="240" height="240" title="" border="0" style="display: block;" />
+                                    
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="324" bgcolor="#ffffff" align="left" valign="top" style="padding: 0 0 15px 20px;">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td valign="top" height="50"><font style="font-family: 'Trebuchet MS'; font-size: 20px; color: #858688; font-weight: bold;">TÃªnis Nike Air Epic Speed Training</font></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <table border="0" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td style="padding-top: 10px;">
+                                                        
+
+                                                        <!--LAYOUT DE POR-->
+                                                           
+<font style="font-family:'Trebuchet MS';font-size:14px;color:#858688;">
+
+<!--LAYOUT 2 SEM TEXTO APENAS O BOTAO-->
+     
+
+<!--LAYOUT 2 TEXTO DE POR-->
+  
+   de <span style="color:#F00; text-decoration:line-through;"> 11.600</span> por<br /><span style="font-size:34px;font-weight:bold;color:#F00;"> 8.900</span><br />pontos Multiplus
+     
+
+<!--LAYOUT 3 APENAS O TEXTO POR-->
+     
+  
+   
+</font>
+
+                                                    </td>
+                                                    <td style="padding: 38px 0 0 20px;">
+                                                        <a href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54d5dfbb4b7243d50818fff428694db822a4957035ca3a04870ff7b44fd014530a8d52a671d6826e4cceb04986544496405476b6d47240c4f3" target="_blank">
+                                                            <img alt="Resgate Agora" src="http://image.emailpontosmultiplus.com.br/lib/fe9013727561027477/m/1/20150224-Teste-Dinamico-cta.jpg" title="Resgate Agora" border="0" style="display: block;" />
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+
+                                        
+
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </td>
+                <!--PRODUTO 1-->
+                
+
+                <!--Produto 2-->
+
+                <td bgcolor="#f2f2f2" style="padding-left: 2px;"></td>
+                <td>
+                    <table border="0" cellpadding="0" cellspacing="0" width="344">
+                        <tr>
+                            <td align="center" valign="middle" width="344" height="265">
+                                <a href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54eca44674b4914c02d6b8bbdd3bd6e2bb8ea6aa7e1c59952c72a6f19832534b2da10995a6b573048f6062622d95bf1e998338185ade81bc0b" target="_blank">
+                                    
+                                    <img alt="" src="https://static1.netshoes.net/Produtos/28/D13-8214-028/D13-8214-028_zoom1.jpg" width="240" height="240" title="" border="0" style="display: block;" />
+                                    
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="324" bgcolor="#ffffff" align="left" valign="top" style="padding: 0 0 15px 20px;">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td valign="top" height="50"><font style="font-family: 'Trebuchet MS'; font-size: 20px; color: #858688; font-weight: bold;">Bolsa Adidas Shopper</font></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <table border="0" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                   <td>
+                                                        
+
+                                                        
+
+                                                        <!--LAYOUT DE POR-->
+                                                           
+<font style="font-family:'Trebuchet MS';font-size:14px;color:#858688;">
+
+<!--LAYOUT 2 SEM TEXTO APENAS O BOTAO-->
+     
+
+<!--LAYOUT 2 TEXTO DE POR-->
+     
+
+<!--LAYOUT 3 APENAS O TEXTO POR-->
+  
+   por<br /><span style="font-size:34px;font-weight:bold;color:#F00;"> 4.970</span><br />pontos Multiplus
+     
+  
+   
+</font>
+
+                                                        
+                                                    </td>
+                                                    
+                                                    <td style="padding: 38px 0 0 20px;">
+                                                        <a href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54eca44674b4914c02d6b8bbdd3bd6e2bb8ea6aa7e1c59952c72a6f19832534b2da10995a6b573048f6062622d95bf1e998338185ade81bc0b" target="_blank">
+                                                            <img alt="Resgate Agora" src="http://image.emailpontosmultiplus.com.br/lib/fe9013727561027477/m/1/20150224-Teste-Dinamico-cta.jpg" title="Resgate Agora" border="0" style="display: block;" />
+                                                        </a>
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                            </table>
+                                        </td>
+
+                                        
+
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </td>
+
+            </tr>
+        </table>
+    </td>
+</tr>
+
+<!--espaÃ§o entre os box-->
+<tr>
+    <td bgcolor="#f2f2f2" style="font-size: 0; line-height: 0;" height="2">&nbsp;</td>
+</tr>
+<!--/espaÃ§o entre os box-->
+
+
+
+
+                    
+
+                    
+
+                    <!-- TESTE RENE -->
+                    <!-- TESTE RENE -->
+                    
+
+                    
+
+                    <!-- TESTE RENE -->
+                    <!-- TESTE RENE -->
+                    
+                    <!--Imprimir TEMPLATE TIPO_OFERTA DUPLA-->
+                    <!-- old =ContentArea(140861)= -->
+                    
+
+<!--PRODUTO 1-->
+<tr>
+    <td align="center">
+        <table cellpadding="0" cellspacing="0" width="690" bgcolor="#FFFFFF">
+            <tr>
+                <td>
+                    <table border="0" cellpadding="0" cellspacing="0" width="344">
+                        <tr>
+                            <td align="center" valign="middle" width="344" height="265">
+                                <a href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e5478be3168cc2b1dbbf54f810f90c5998f6042ddcbbaf5b41fc71a261299ed919169e67d7f86b38a99570411cd8f856bac224f9aa16efc4fda" target="_blank">
+                                    
+                                    <img alt="" src="https://static1.netshoes.net/Produtos/60/L73-0071-460/L73-0071-460_zoom1.jpg" width="240" height="240" title="" border="0" style="display: block;" />
+                                    
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="324" bgcolor="#ffffff" align="left" valign="top" style="padding: 0 0 15px 20px;">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td valign="top" height="50"><font style="font-family: 'Trebuchet MS'; font-size: 20px; color: #858688; font-weight: bold;">Carolina Herrera Kit Perfume Feminino CH EDT 100ml + LoÃ§Ã£o Hidratante 100ml</font></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <table border="0" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td style="padding-top: 10px;">
+                                                        
+
+                                                        <!--LAYOUT DE POR-->
+                                                           
+<font style="font-family:'Trebuchet MS';font-size:14px;color:#858688;">
+
+<!--LAYOUT 2 SEM TEXTO APENAS O BOTAO-->
+     
+
+<!--LAYOUT 2 TEXTO DE POR-->
+  
+   de <span style="color:#F00; text-decoration:line-through;"> 22.890</span> por<br /><span style="font-size:34px;font-weight:bold;color:#F00;"> 21.190</span><br />pontos Multiplus
+     
+
+<!--LAYOUT 3 APENAS O TEXTO POR-->
+     
+  
+   
+</font>
+
+                                                    </td>
+                                                    <td style="padding: 38px 0 0 20px;">
+                                                        <a href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e5478be3168cc2b1dbbf54f810f90c5998f6042ddcbbaf5b41fc71a261299ed919169e67d7f86b38a99570411cd8f856bac224f9aa16efc4fda" target="_blank">
+                                                            <img alt="Resgate Agora" src="http://image.emailpontosmultiplus.com.br/lib/fe9013727561027477/m/1/20150224-Teste-Dinamico-cta.jpg" title="Resgate Agora" border="0" style="display: block;" />
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+
+                                        
+
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </td>
+                <!--PRODUTO 1-->
+                
+
+                <!--Produto 2-->
+
+                <td bgcolor="#f2f2f2" style="padding-left: 2px;"></td>
+                <td>
+                    <table border="0" cellpadding="0" cellspacing="0" width="344">
+                        <tr>
+                            <td align="center" valign="middle" width="344" height="265">
+                                <a href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e5487475ca8639ecf26c23f64dde97328e4f95a2c6daeb51bcc7f8e07bc674fd5584c8d28b62b14f823202bad8aa252f4d1e9289719cf2849db" target="_blank">
+                                    
+                                    <img alt="" src="https://www.pontosmultiplus.com.br/images/troque_express/produtos/okulos/1200x900-relogiofemininocasiodigitalvintagela680wga9bdf.jpg" width="240" height="240" title="" border="0" style="display: block;" />
+                                    
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="324" bgcolor="#ffffff" align="left" valign="top" style="padding: 0 0 15px 20px;">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td valign="top" height="50"><font style="font-family: 'Trebuchet MS'; font-size: 20px; color: #858688; font-weight: bold;">RelÃ³gio Feminino Casio Digital Vintage</font></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <table border="0" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                   <td>
+                                                        
+
+                                                        
+
+                                                        <!--LAYOUT DE POR-->
+                                                           
+<font style="font-family:'Trebuchet MS';font-size:14px;color:#858688;">
+
+<!--LAYOUT 2 SEM TEXTO APENAS O BOTAO-->
+     
+
+<!--LAYOUT 2 TEXTO DE POR-->
+  
+   de <span style="color:#F00; text-decoration:line-through;"> 14.430</span> por<br /><span style="font-size:34px;font-weight:bold;color:#F00;"> 12.980</span><br />pontos Multiplus
+     
+
+<!--LAYOUT 3 APENAS O TEXTO POR-->
+     
+  
+   
+</font>
+
+                                                        
+                                                    </td>
+                                                    
+                                                    <td style="padding: 38px 0 0 20px;">
+                                                        <a href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e5487475ca8639ecf26c23f64dde97328e4f95a2c6daeb51bcc7f8e07bc674fd5584c8d28b62b14f823202bad8aa252f4d1e9289719cf2849db" target="_blank">
+                                                            <img alt="Resgate Agora" src="http://image.emailpontosmultiplus.com.br/lib/fe9013727561027477/m/1/20150224-Teste-Dinamico-cta.jpg" title="Resgate Agora" border="0" style="display: block;" />
+                                                        </a>
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                            </table>
+                                        </td>
+
+                                        
+
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </td>
+
+            </tr>
+        </table>
+    </td>
+</tr>
+
+<!--espaÃ§o entre os box-->
+<tr>
+    <td bgcolor="#f2f2f2" style="font-size: 0; line-height: 0;" height="2">&nbsp;</td>
+</tr>
+<!--/espaÃ§o entre os box-->
+
+
+
+
+                    
+
+                    
+
+                    <!-- TESTE RENE -->
+                    <!-- TESTE RENE -->
+                    
+
+                    
+
+                    <!-- TESTE RENE -->
+                    <!-- TESTE RENE -->
+                    
+                    <!--Imprimir TEMPLATE TIPO_OFERTA DUPLA-->
+                    <!-- old =ContentArea(140861)= -->
+                    
+
+<!--PRODUTO 1-->
+<tr>
+    <td align="center">
+        <table cellpadding="0" cellspacing="0" width="690" bgcolor="#FFFFFF">
+            <tr>
+                <td>
+                    <table border="0" cellpadding="0" cellspacing="0" width="344">
+                        <tr>
+                            <td align="center" valign="middle" width="344" height="265">
+                                <a href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e547eb289a9b29b73b7cdc7956ae9bbad2b5a82233e5fb21beed1667be702aea6ddf334a82850276fdecf8a3c0080ec964e0322f50262d19daf" target="_blank">
+                                    
+                                    <img alt="" src="https://www.pontosmultiplus.com.br/images/troque_express/produtos/anna_pegova/1200x900-C89C4140602105914_bi.png" width="240" height="240" title="" border="0" style="display: block;" />
+                                    
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="324" bgcolor="#ffffff" align="left" valign="top" style="padding: 0 0 15px 20px;">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td valign="top" height="50"><font style="font-family: 'Trebuchet MS'; font-size: 20px; color: #858688; font-weight: bold;">Creme Hidratante para peles mistas Anna Pegova - Hydratant Mixte - 40ml</font></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <table border="0" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td style="padding-top: 10px;">
+                                                        
+
+                                                        <!--LAYOUT DE POR-->
+                                                           
+<font style="font-family:'Trebuchet MS';font-size:14px;color:#858688;">
+
+<!--LAYOUT 2 SEM TEXTO APENAS O BOTAO-->
+     
+
+<!--LAYOUT 2 TEXTO DE POR-->
+     
+
+<!--LAYOUT 3 APENAS O TEXTO POR-->
+  
+   por<br /><span style="font-size:34px;font-weight:bold;color:#F00;"> 12.020</span><br />pontos Multiplus
+     
+  
+   
+</font>
+
+                                                    </td>
+                                                    <td style="padding: 38px 0 0 20px;">
+                                                        <a href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e547eb289a9b29b73b7cdc7956ae9bbad2b5a82233e5fb21beed1667be702aea6ddf334a82850276fdecf8a3c0080ec964e0322f50262d19daf" target="_blank">
+                                                            <img alt="Resgate Agora" src="http://image.emailpontosmultiplus.com.br/lib/fe9013727561027477/m/1/20150224-Teste-Dinamico-cta.jpg" title="Resgate Agora" border="0" style="display: block;" />
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+
+                                        
+
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </td>
+                <!--PRODUTO 1-->
+                
+
+                <!--Produto 2-->
+
+                <td bgcolor="#f2f2f2" style="padding-left: 2px;"></td>
+                <td>
+                    <table border="0" cellpadding="0" cellspacing="0" width="344">
+                        <tr>
+                            <td align="center" valign="middle" width="344" height="265">
+                                <a href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54ff69bb44fdad5b622236495ca0e0d9e59fb030004b39a4395b07272dc49478b61207d8a8cfc7214d943b3bced52cdf6703bcf2c7477960ee" target="_blank">
+                                    
+                                    <img alt="" src="https://s3.amazonaws.com/satelital-resources/products/21928_0_c5d9ca8d-0368-450a-8937-e0af92e77ca0_Big.jpg" width="240" height="240" title="" border="0" style="display: block;" />
+                                    
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="324" bgcolor="#ffffff" align="left" valign="top" style="padding: 0 0 15px 20px;">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td valign="top" height="50"><font style="font-family: 'Trebuchet MS'; font-size: 20px; color: #858688; font-weight: bold;">Conj. Talheres Inox Tramontina 24 peÃ§as Polywood marrom</font></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <table border="0" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                   <td>
+                                                        
+
+                                                        
+
+                                                        <!--LAYOUT DE POR-->
+                                                           
+<font style="font-family:'Trebuchet MS';font-size:14px;color:#858688;">
+
+<!--LAYOUT 2 SEM TEXTO APENAS O BOTAO-->
+     
+
+<!--LAYOUT 2 TEXTO DE POR-->
+  
+   de <span style="color:#F00; text-decoration:line-through;"> 18.170</span> por<br /><span style="font-size:34px;font-weight:bold;color:#F00;"> 13.280</span><br />pontos Multiplus
+     
+
+<!--LAYOUT 3 APENAS O TEXTO POR-->
+     
+  
+   
+</font>
+
+                                                        
+                                                    </td>
+                                                    
+                                                    <td style="padding: 38px 0 0 20px;">
+                                                        <a href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54ff69bb44fdad5b622236495ca0e0d9e59fb030004b39a4395b07272dc49478b61207d8a8cfc7214d943b3bced52cdf6703bcf2c7477960ee" target="_blank">
+                                                            <img alt="Resgate Agora" src="http://image.emailpontosmultiplus.com.br/lib/fe9013727561027477/m/1/20150224-Teste-Dinamico-cta.jpg" title="Resgate Agora" border="0" style="display: block;" />
+                                                        </a>
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                            </table>
+                                        </td>
+
+                                        
+
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </td>
+
+            </tr>
+        </table>
+    </td>
+</tr>
+
+<!--espaÃ§o entre os box-->
+<tr>
+    <td bgcolor="#f2f2f2" style="font-size: 0; line-height: 0;" height="2">&nbsp;</td>
+</tr>
+<!--/espaÃ§o entre os box-->
+
+
+
+
+                    
+
+                    
+
+                    <!-- TESTE RENE -->
+                    <!-- TESTE RENE -->
+                    
+
+                    
+
+                    <!-- TESTE RENE -->
+                    <!-- TESTE RENE -->
+                    
+                    <!--destaque-->
+
+                    <tr>
+                        <td>
+
+                            <a href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54ab9a4845084bcf7bd9840350b1c2a6ece7fb72ff3bd38ad6c2cef6228103c3735e93b11b4a935d5598ce4a1dac1466d351957347bb91f05d" target="_blank"><img src="http://image.emailpontosmultiplus.com.br/lib/fe9013727561027477/m/7/CTA+FINAL+RESGATE.jpg" alt="" style="display:block;" title="" border="0" /></a>
+                            
+                        </td>
+                    </tr>
+
+                    <!--/destaque-->
+                    <!--espaÃ§o entre os box-->
+                    <tr>
+                        <td bgcolor="#f2f2f2" style="font-size:0;line-height:0;" height="10">&nbsp;</td>
+                    </tr>
+                    <!--/espaÃ§o entre os box-->
+                    
+
+                    
+
+                    <!--menu footer-->
+                    
+
+</table>
+        </td>
+    </tr>
+    <!--menu footer-->
+<tr>
+        <td bgcolor="#ffffff" align="center"> 
+            <table align="center" border="0" cellpadding="0" cellspacing="0" width="690">
+                <tr>
+                    <td>
+                    <a target="_blank" href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54ea760a5541d5c63dc4611d412066a7172276268298d0533461451f3309a6d0be5caee1166e4ad4027c7d7b0e416f381cd6827dd0783a20f9">
+                            <img alt="Transfira os pontos dos seus cartÃµes de crÃ©dito para a Multiplus" src="http://image.emailpontosmultiplus.com.br/lib/fe9013727561027477/m/17/transfira.jpg" title="Transfira os pontos dos seus cartÃµes de crÃ©dito para a Multiplus" border="0" style="display:block;" />
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td bgcolor="#ececec" align="center"> 
+            <table align="center" border="0" cellpadding="0" cellspacing="0" width="690">
+                <tr>
+                    <td>
+                    <a target="_blank" href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54eae786a537937dd64d2fd35102bea0a090ef2ca74fa0ac6438694ac169e35e37d2db6fe0323ac954953ba7a42532170768d8892c00901ea9">
+                            <img alt="Transfira os pontos dos seus cartÃµes de crÃ©dito para a Multiplus" src="http://image.emailpontosmultiplus.com.br/lib/fe9013727561027477/m/17/novo_cartao.jpg" title="Transfira os pontos dos seus cartÃµes de crÃ©dito para a Multiplus" border="0" style="display:block;" />
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td bgcolor="#cdcdcd" align="center"> 
+            <table align="center" border="0" cellpadding="0" cellspacing="0" width="690" >
+                <tr>
+                    <td bgcolor="#cdcdcd">
+                        <img alt="" src="http://i.multiplusfidelidade.com.br/2016-header/destaques_produtos.jpg" title="" border="0" style="display:block;" />
+                    </td>
+                    <td bgcolor="#cdcdcd">
+                        <a href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54f7044b492f0565076b9bcd6236a141dc270547af4ca125b43b3f370685fb520a87dfeec70ea5fdae6c0cb12a88461c62" target="_blank">
+                            <img alt="" src="http://i.multiplusfidelidade.com.br/2016-header/bt-appstore.png" title="" border="0" style="display:block;" />
+                        </a>
+                    </td>
+                    <td style="padding:0 24px 0 10px;" bgcolor="#cdcdcd">
+                        <a href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e540b561e89845a15a68860d6191adc80cba6a90297a2e99b93afb34cd650c06ffd23a25db918444b9d802d5663b9ab441c" target="_blank">
+                            <img alt="" src="http://i.multiplusfidelidade.com.br/2016-header/bt-googleplay.png" title="" border="0" style="display:block;" />
+                        </a>
+                    </td>
+                    <td style="padding:0 13px 0 0;" bgcolor="#cdcdcd">
+                        <a href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54f0009da054015ceece7c584ee4f19984fe5d51ee4643ce1e1d747fdc974d03271c84299e0ef18aa1a7295406c204a5f8" target="_blank">
+                            <img alt="" src="http://i.multiplusfidelidade.com.br/2016-header/bt-instagram.png" title="" border="0" style="display:block;" />
+                        </a>
+                    </td>
+                    <td style="padding:0 13px 0 0;" bgcolor="#cdcdcd">
+                        <a href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e546d72f9f8cc0bcd8e912dd958ec646bf16fb998477a1b6b243e45501a028a5a9b7dc1024eb813e269626bc3280154e70d" target="_blank">
+                            <img alt="" src="http://i.multiplusfidelidade.com.br/2016-header/bt-facebook.png" title="" border="0" style="display:block;" />
+                        </a>
+                    </td>
+                    <td style="padding:0 13px 0 0;" bgcolor="#cdcdcd">
+                        <a href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e5456ea4485b7fe3096b89dbba822500c700f8a772f4c619f3fdf27f009e98fe5a529f82513a05d3e90cd54adb518180667" target="_blank">
+                            <img alt="" src="http://i.multiplusfidelidade.com.br/2016-header/bt-twitter.png" title="" border="0" style="display:block;" />
+                        </a>
+                    </td>
+                    <td style="padding:0 22px 0 0;" bgcolor="#cdcdcd">
+                        <a href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e54a9db9db282ac41594b8c39b5cbb02fa96f6ce3790219b9aeb49afb9337557805947d24635eddc7ac42f0383cfd7c4fe9" target="_blank">
+                            <img alt="" src="http://i.multiplusfidelidade.com.br/2016-header/bt-youtube.png" title="" border="0" style="display:block;" />
+                        </a>
+                    </td>
+
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <!--/menu footer-->
+              
+    <!--espaÃ§o entre os box-->
+    <tr>
+        <td bgcolor="#f2f2f2" style="font-size:0;line-height:0;" height="20">&nbsp;</td>
+    </tr>
+    <!--/espaÃ§o entre os box--> 
+              
+    <!--texto legal-->
+    <tr>
+        <td align="center">
+            <table align="center" border="0" cellpadding="0" cellspacing="0" width="690">
+                <tr>
+                    <td align="left">
+                        <font style="font-family:Arial;font-size:10px;color:#444444;">*Saldo atualizado em 25/04/2017 Ã s 00:16
+                            <br /><br />
+
+<b> A quantidade de pontos pode variar de acordo com a disponibilidade e demais condiÃ§Ãµes do produto ou serviÃ§o. Existindo diferenÃ§a na pontuaÃ§Ã£o no site no momento do resgate e no presente e-mail, serÃ¡ vÃ¡lida, para todos os efeitos, a pontuaÃ§Ã£o do site.</b>
+<br /><br />
+                             <!-- TEXTO LEGAL -->
+							TransferÃªncia de bancos: PromoÃ§Ã£o vÃ¡lida exclusivamente para Participantes Multiplus, que realizarem PromoÃ§Ã£o vÃ¡lida exclusivamente para Participantes Multiplus, que realizarem a transferÃªncia de pontos das InstituiÃ§Ãµes Financeiras parceiras elegÃ­veis para a Multiplus durante o perÃ­odo promocional, vigente de 24/04/2017 a 28/04/2017. A PromoÃ§Ã£o consiste na bonificaÃ§Ã£o de 30% (trinta por cento) de pontos bÃ´nus sobre cada transaÃ§Ã£o de acÃºmulo, resultante da transferÃªncia para a Rede MULTIPLUS dos pontos do Programa de Relacionamento das InstituiÃ§Ãµes Financeiras Parceiras elegÃ­veis, durante o perÃ­odo promocional. NÃ£o sÃ£o elegÃ­veis a essa PromoÃ§Ã£o os pontos decorrentes dos CartÃµes Banco do Brasil, Bradesco, Membership Rewards, Itaucard, Credicard, Multiplus Itaucard e TAM Itaucard. Eventuais bonificaÃ§Ãµes concedidas pelas InstituiÃ§Ãµes Financeiras Parceiras nÃ£o serÃ£o contabilizadas para o cÃ¡lculo da bonificaÃ§Ã£o a ser concedida pela MULTIPLUS. Os participantes que
+ fizerem parte do Clube Multiplus receberÃ£o a bonificaÃ§Ã£o adicional de 5% (cinco por cento) de pontos sobre as transferÃªncias de pontos das instituiÃ§Ãµes financeiras parceiras participantes realizadas durante o perÃ­odo promocional. Os participantes que tiverem pagamentos em atraso ou irregularidades no Clube Multiplus nÃ£o serÃ£o elegÃ­veis a bonificaÃ§Ã£o de 5% (cinco por cento). Para participar da promoÃ§Ã£o Ã© necessÃ¡rio ter cadastro ativo na Multiplus e aceitar o Regulamento disponÃ­vel no site https://promo.pontosmultiplus.com.br/bancos30 antes da solicitaÃ§Ã£o de transferÃªncia de Pontos. O aceite ao Regulamento Ã© obrigatÃ³rio. Os participantes que nÃ£o efetuarem o aceite no Regulamento nÃ£o serÃ£o elegÃ­veis a promoÃ§Ã£o. PromoÃ§Ã£o nÃ£o cumulativa com outras promoÃ§Ãµes vigentes na Multiplus ou de outra InstituiÃ§Ã£o Financeira parceira, havendo duas ou mais promoÃ§Ãµes ativas sobre os mesmos pontos acumulados, serÃ¡ concedida apenas uma bonificaÃ§Ã£o. A bonificaÃ§Ã£o serÃ¡ creditada na
+ conta Multiplus do participante atÃ© 23/05/2017. A InstituiÃ§Ã£o Financeira Parceira poderÃ¡ ter regras especÃ­ficas para transferÃªncia de pontos, devendo o participante consultar tais regras e condiÃ§Ãµes para transferÃªncia de pontos junto a respectiva InstituiÃ§Ã£o Financeira. Consulte o Regulamento da promoÃ§Ã£o em Regulamento e as regras gerais para acÃºmulo e resgate de pontos em www.pontosmultiplus.com.br.
+<br /><br />
+Uma vez solicitada a conversÃ£o de pontos Multiplus em produtos do Parceiro, com ou sem complemento de compra de pontos para a finalizaÃ§Ã£o do resgate, disponÃ­vel para determinados parceiros da Rede, nÃ£o haverÃ¡ a possibilidade de cancelamento e/ou devoluÃ§Ã£o dos pontos Multiplus. As caracterÃ­sticas do produto (voltagem, cor, tamanho, marca, etc.) devem ser verificadas antes da conclusÃ£o do resgate. O Parceiro nÃ£o realiza troca de produto ou devoluÃ§Ã£o de pontos por resgates realizados equivocadamente. Ã‰ fundamental que haja alguÃ©m no local constante do Pedido para receber o produto. ApÃ³s a 3Âª tentativa de entrega, sem sucesso, o pedido serÃ¡ cancelado, sem direito Ã  devoluÃ§Ã£o dos pontos Multiplus. O conteÃºdo e qualidade dos produtos sÃ£o de inteira e exclusiva responsabilidade do Parceiro.
+ Consulte locais aceitos e prazos de entrega no site do Parceiro e na confirmaÃ§Ã£o do Pedido. O Parceiro nÃ£o efetua entregas para endereÃ§os de caixas postais. Sempre inclua o destinatÃ¡rio, endereÃ§o completo e CPF de entrega. Consulte todas as regras e condiÃ§Ãµes para acÃºmulo e resgate de pontos Multiplus no site www.pontosmultiplus.com.br. Para mais informaÃ§Ãµes, entre em contato atravÃ©s dos canais Multiplus. As imagens sÃ£o meramente ilustrativas. Os preÃ§os podem sofrer alteraÃ§Ãµes sem aviso prÃ©vio. Os estoques podem ser limitados.
+<br /><br />
+Para acumular os pontos, o Participante deverÃ¡ ter cadastro na Rede Multiplus. Os pontos acumulados na Multiplus possuem validade de 02 (dois) anos contados da data do acÃºmulo. O prazo para o crÃ©dito dos pontos acumulados na conta Multiplus do Participante pode variar de acordo com cada Parceiro. Os parceiros da Rede Multiplus podem estabelecer deflator na transferÃªncia de pontos, devendo o Participante verificar as regras e condiÃ§Ãµes junto ao Parceiro. A Multiplus nÃ£o possui qualquer gerenciamento nos programas de fidelidade dos Parceiros da Rede. A Multiplus irÃ¡ realizar o crÃ©dito dos pontos conforme informaÃ§Ãµes dos Parceiros, nÃ£o se responsabilizando por informaÃ§Ãµes incorretas. Uma vez realizado o acÃºmulo na Rede Multiplus nÃ£o serÃ¡ possÃ­vel o cancelamento ou devoluÃ§Ã£o de pontos para
+ outros programas de fidelidade. Os pontos acumulados nÃ£o poderÃ£o ser objeto de venda, cessÃ£o ou permuta, bem como nÃ£o poderÃ£o ser convertidos em dinheiro. Pontos acumulados indevidamente por erro sistÃªmico ou humano poderÃ£o ser estornados pela Multiplus, sem aviso prÃ©vio.
+
+							<br /><br />
+
+                           Para garantir que nossos comunicados cheguem em sua caixa de entrada e vocÃª fique por dentro de todas as novidades, adicione o e-mail novidades@emailpontosmultiplus.com.br ao seu catÃ¡logo de endereÃ§os. A Multiplus respeita a sua privacidade.
+                            <br /><br />
+                            Multiplus S/A | Alameda Xingu, 350, 15Â°e 17Â° andar, CondomÃ­nio ITower Iguatemi Alphaville , CEP: 06455-911, Alphaville Industrial, Barueri - SP. <br />
+                            <br />
+                            ConheÃ§a <a href="http://click.emailpontosmultiplus.com.br/?qs=43c7f37d62dd4e5454080efe46b94bfd2311b76951cf75e2634a44cffe616ebbd8a8021dfdd7b6298eddb88bbadd23ca7ca6b3876d30f760" style="color:#444444;" target="_blank">aqui</a> nossa polÃ­tica de privacidade<br />
+                            <br />
+                            Se vocÃª nÃ£o deseja mais receber nossos e-mails, cancele sua inscriÃ§Ã£o <a href="http://pages.emailpontosmultiplus.com.br/page.aspx?qs=3935619f7de112efca651f0b35f46882a37fb682a9b4ae74b2f505e4da898478a1bea7764dd28394ba09fa85ac563d84014b1b7e333f4880a9bb65f3337cebe3debc3fa96a794f10c1f68151fef7b22903a241ad8979972e699a1eddfe10a6b96b8fd1da65ad5ea9" style="color:#444444;" target="_blank">aqui</a>.
+                        </font>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <!--/texto legal-->
+
+</table>
+
+                    <img src="http://click.emailpontosmultiplus.com.br/open.aspx?ffcb10-fe9816737661077c73-fe6816797664057e7717-fe9013727561027477-ff961c71-fe5c15757460037b7c16-ff6415717c" width="1" height="1">
+
+
+</body>
+</html></body></html>
+
+--blbrHJoPGijc=_?:--

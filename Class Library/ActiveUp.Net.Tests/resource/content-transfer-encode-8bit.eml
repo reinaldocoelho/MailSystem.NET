@@ -1,0 +1,60 @@
+Delivered-To: test@gmail.com
+Received: by 10.74.160.23 with SMTP id m23csp804194ook;
+        Thu, 16 Mar 2017 08:08:37 -0700 (PDT)
+X-Received: by 10.55.6.150 with SMTP id 144mr8056253qkg.46.1489676917228;
+        Thu, 16 Mar 2017 08:08:37 -0700 (PDT)
+Return-Path: <sender@gmail.com>
+Received: from mail-qk0-x229.google.com (mail-qk0-x229.google.com. [2607:f8b0:400d:c09::229])
+        by mx.google.com with ESMTPS id a64si3758726qkf.331.2017.03.16.08.08.37
+        for <test@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 16 Mar 2017 08:08:37 -0700 (PDT)
+Received-SPF: pass (google.com: domain of sender@gmail.com designates 2607:f8b0:400d:c09::229 as permitted sender) client-ip=2607:f8b0:400d:c09::229;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com;
+       spf=pass (google.com: domain of sender@gmail.com designates 2607:f8b0:400d:c09::229 as permitted sender) smtp.mailfrom=sender@gmail.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=gmail.com
+Received: by mail-qk0-x229.google.com with SMTP id 1so37366903qkl.3
+        for <test@gmail.com>; Thu, 16 Mar 2017 08:08:37 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=message-id:date:mime-version:from:to:subject
+         :content-transfer-encoding;
+        bh=2QnvsTh9E3ypZ4ixMqGitbrJs0JbGOtjdI7L1BPGDqU=;
+        b=fc5g3ktEYw5YquimyXeRkbhamf3Jdvuq7aCpJvsg7SfPdVDIdR/P7UT3lvqpW1KI9j
+         L0I8imuun1ee+TbRK99Z8ECimhvWtrEhZMLrqCa01nRjjoJmFLe8c82Ox423FMmiE7Tp
+         N7DAX5jIWiiLuw+8lwpF2vA2yW4m2QTCqplmc7iXjwIdXI2yPRPEp4zarYC/ir/blBTQ
+         oCSPiYvB2fohqTMnjR+ptes0P2IQE2b4uQL2WIFCQnv4GaBnjTJyOssgDnU/jRgAisrZ
+         7vFUx0dJ5eM3aWPO89r29fZL4OR+H/5wlVH0rmow378wJnwQXwgLirO2mxk99MdSAgPA
+         4+3A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:message-id:date:mime-version:from:to:subject
+         :content-transfer-encoding;
+        bh=2QnvsTh9E3ypZ4ixMqGitbrJs0JbGOtjdI7L1BPGDqU=;
+        b=fq8X2mVZ80d73QoN1x2SBUvq+BtR3rXI90xApapNiuFHl1F2ueIx+HRu2MPLpKgXqa
+         P/IsSSUBAA4xktfT2NS2UThHNbK5DJb60zlFU9scwy/mFyiNmykwzGX+ffZOgSzsiCkE
+         zPLY/bOvqyDlc21slD1gqPgdm7pMronW/6VX2JbrK07GTEulJiOkAZnEQx1Qfff+yab7
+         Leb4K5W8lqDYSI9qmcpMP+Dn/7LbjdZlZfI63Z1w2dVsgAcjHw1JhoaXh/auUT+FMVXP
+         t12UYcyNWMBKmP8zd7bD+1x32S2Cc9/HNaQSRhRNyYd8g2y9b+klobYheyIMIkHvA+Ve
+         ve0Q==
+X-Gm-Message-State: AFeK/H3g7AlcgYq1mtEc/Eudw1nWyBHvrf5jBa6KyocTGRNQDtHWppI/pmsbhDy4imkRbsM6
+X-Received: by 10.55.158.87 with SMTP id h84mr8181387qke.15.1489676916814;
+        Thu, 16 Mar 2017 08:08:36 -0700 (PDT)
+Return-Path: <sender@gmail.com>
+Received: from DESKTOP-J2NGVFS ([177.139.33.240])
+        by smtp.gmail.com with ESMTPSA id w35sm3805749qtc.55.2017.03.16.08.08.35
+        for <test@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 16 Mar 2017 08:08:36 -0700 (PDT)
+Message-ID: <58caaa74.6625ed0a.22a2d.5376@mx.google.com>
+Date: Thu, 16 Mar 2017 08:08:36 -0700 (PDT)
+X-Google-Original-Date: 16 Mar 2017 12:08:32 -0300
+MIME-Version: 1.0
+From: sender@gmail.com
+To: test@gmail.com
+Subject: Special char test  çãõáéíóú
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+Body special char test  çãõáéíóú

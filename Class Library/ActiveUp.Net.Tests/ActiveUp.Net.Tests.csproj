@@ -105,6 +105,18 @@
     <None Include="resource\confirm_read_parse_problem.eml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="resource\content-transfer-encode-8bit-utf8-flowed.eml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="resource\content-transfer-encode-8bit.eml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="resource\content-transfer-encode-8bit-charset-windows-1252.eml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="resource\content-transfer-encode-8bit-charset-utf8-new-lined.eml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="resource\image-as-body-part.eml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

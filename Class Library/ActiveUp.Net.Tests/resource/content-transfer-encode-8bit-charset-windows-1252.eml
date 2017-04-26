@@ -1,0 +1,677 @@
+Received: from FR1PR80MB2070.lamprd80.prod.outlook.com (10.175.144.141) by
+ CP2PR80MB2068.lamprd80.prod.outlook.com (10.171.23.143) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.1047.13 via Mailbox Transport; Wed, 26 Apr 2017 16:41:58 +0000
+Received: from FR1PR80MB1941.lamprd80.prod.outlook.com (10.175.143.142) by
+ FR1PR80MB2070.lamprd80.prod.outlook.com (10.175.144.141) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.1047.13; Wed, 26 Apr 2017 16:41:57 +0000
+Received: from SN2PR80CA017.lamprd80.prod.outlook.com (10.141.39.155) by
+ FR1PR80MB1941.lamprd80.prod.outlook.com (10.175.143.142) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.1047.13; Wed, 26 Apr 2017 16:41:55 +0000
+Received: from BL2NAM02FT043.eop-nam02.prod.protection.outlook.com
+ (2a01:111:f400:7e46::208) by SN2PR80CA017.outlook.office365.com
+ (2a01:111:e400:340b::27) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id 15.1.1047.13 via
+ Frontend Transport; Wed, 26 Apr 2017 16:41:53 +0000
+Authentication-Results: spf=none (sender IP is 209.85.216.182)
+ smtp.mailfrom=examplehotel.com.br; BRASILTOUR.com; dkim=fail (body hash did not
+ verify) header.d=examplehotel.com.br;BRASILTOUR.com; dmarc=none action=none
+ header.from=examplehotel.com.br;
+Received-SPF: None (protection.outlook.com: examplehotel.com.br does not
+ designate permitted sender hosts)
+Received: from mail-qt0-f182.google.com (209.85.216.182) by
+ BL2NAM02FT043.mail.protection.outlook.com (10.152.77.95) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P384) id
+ 15.1.1019.14 via Frontend Transport; Wed, 26 Apr 2017 16:41:52 +0000
+Received: by mail-qt0-f182.google.com with SMTP id m36so5525017qtb.0
+        for <destinatary@host.com>; Wed, 26 Apr 2017 09:41:52 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=examplehotel.com.br; s=google;
+        h=subject:to:references:from:message-id:date:user-agent:mime-version
+         :in-reply-to;
+        bh=/INvhB0P/ZNOk7BBqFZ9n+Vr1bK8VzkQrdMS0JF949I=;
+        b=N65+P98/fnDL7oU/XNypWOdzQ4XaXJcS7aMyNUlvHms+REri2eJEzykSLXawamG76G
+         JY7FGmoAQgSCwP2gc3ztOkW1kbNtX8E7jcnTGc6DKU6rUD6Ju/zNMO2aVnbX3niFDUPa
+         4EPVLdnHFxcWrvoy/P3uVRkgDx9Zk3ImWYvXmkrIkm1lRXWkPct086xfBgYvjEA8Qb6g
+         ZYc219Jr50NCLsFDSnq0eu4GlGi9E4GYIPKMQEVUuRsOOsxqXjDCxqIkOnGmgtYahVV+
+         B42CfGd22BlpZWuFQsw+huJeYNgTvoS6hhHQkVoCEyJe/rzL/WTwLpZftyuDrbq9cgQF
+         whzA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:subject:to:references:from:message-id:date
+         :user-agent:mime-version:in-reply-to;
+        bh=/INvhB0P/ZNOk7BBqFZ9n+Vr1bK8VzkQrdMS0JF949I=;
+        b=T4DYM9c1EBr7mQ40QJd+Px25O6zNFm9MJKdgjO79AnaKFDtl+5rTq6sqk+HsCgu6up
+         93bYra6w+F8Ana1CB9q4cY9t3RIIuR2UQfKH2WwTByEpSd0P8RSNmrXptP1SouP2iIzf
+         LMRUo4LEMQXTbYf+qgGlyXfDfRgJRsLPKdc5kiXeQDpCpAekQLuLthUNKVaFHWiAtFjI
+         KFlqSn/4NSWii8Yhgw16BYxvXZLhD0maI+Xk/4w4X21fH1q5XBbxsbcgXWXj3lPeI7Xz
+         ZLA6U9F2q6TIoRzTGJhNNYrIkEr7BqBEEJmDR9yWuokYy8YqQtAY9D3xXPGl2SVd9wOC
+         8MOA==
+X-Gm-Message-State: AN3rC/6V722/oGftqPXGMUOQ3JDedmQE4UhkAqCMF49adVcTe9Lf2P5o
+	zyavtZF2FJLqSxib
+X-Received: by 10.237.39.34 with SMTP id n31mr776409qtd.116.1493224852234;
+        Wed, 26 Apr 2017 09:40:52 -0700 (PDT)
+Return-Path: atendimento@examplehotel.com.br
+Received: from [192.168.100.13] (177-75-207-56.dynamic.starweb.net.br. [177.75.207.56])
+        by smtp.gmail.com with ESMTPSA id t129sm505390qkf.36.2017.04.26.09.40.49
+        for <destinatary@host.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 26 Apr 2017 09:40:51 -0700 (PDT)
+Subject: =?UTF-8?Q?Re:_Solicita=c3=a7=c3=a3o_de_Reserva_-_Josh_Ronald_Morei?=
+ =?UTF-8?Q?ra_Jr.?=
+To: Maeda <destinatary@host.com>
+References: <67502455-0fc9-3da6-2454-64c51fa9a79f@smtp.office365.com>
+ <SC1PR80MB207772CC4E4348D5BFD09E56B41B0@SC1PR80MB2077.lamprd80.prod.outlook.com>
+ <8524c93a-c73c-6ef6-7726-db7197074de0@examplehotel.com.br>
+ <SC1PR80MB1949E01284269E5CAA38757AB41B0@SC1PR80MB1949.lamprd80.prod.outlook.com>
+ <d9fcadf1-6c58-0941-7fa5-e0a7edef80d5@examplehotel.com.br>
+ <SC1PR80MB1949C8574CF7B8DDCDA4BFB2B4110@SC1PR80MB1949.lamprd80.prod.outlook.com>
+From: Maria <atendimento@examplehotel.com.br>
+Message-ID: <e309e334-44b3-9e10-058d-c4cdbacae79c@examplehotel.com.br>
+Date: Wed, 26 Apr 2017 13:40:44 -0300
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101
+ Thunderbird/45.8.0
+In-Reply-To: <SC1PR80MB1949C8574CF7B8DDCDA4BFB2B4110@SC1PR80MB1949.lamprd80.prod.outlook.com>
+Content-Type: multipart/alternative;
+	boundary="------------0A55E8B9E8F0B1A7936C5AA7"
+X-MS-Exchange-Organization-Network-Message-Id: 1f238c02-9247-4bdc-c1ee-08d48cc324bd
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: fec095e8-7415-4521-9abe-d8c80dedd2cf:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-Forefront-Antispam-Report: CIP:209.85.216.182;IPV:NLI;CTRY:US;EFV:NLI;SFV:SKN;SFS:;DIR:INB;SFP:;SCL:-1;SRVR:FR1PR80MB1941;H:mail-qt0-f182.google.com;FPR:;SPF:None;LANG:pt;;SKIP:1;
+X-Microsoft-Exchange-Diagnostics: 1;BL2NAM02FT043;1:y0bStIo6va9/RXaTrwKCqo08F9KWwop7bQr2egJqPMv+zwEqGsEjMZBxu/zMk133dBQCV79Orc06Rs9FdEMIOh8RrznBkKxxECgjWk01IMu0dYasvF1lzrIfcUdnYnz7DlXhfI+UkG/PLCAgjlQY/eVmgZn8IjmbEdO4VrBL6fWXUX65o0yWcW1QgEHAUXNamea5Jg5s54qNmHH/46E/CuFyunZXxaSgHYbaJ028GHTTYEsjGEVKQf47moGVS/FdL+U7qtGFhR8i9jLaOfsrjf0lljJuhmXmdC9nIQL8Vz2fmFaq7Eozz4ViE8Oiv1xFqKyAprarplBNQiDRvfdjXhDayLnw1IrZ+GKgtZuKEMwfyGdmtglWlBUOBOVuwGOVs5x2ryKHIT61U6B08mVNmZAmsLRkb7LY8Y+bVhmNjxTZbXBzH3/q+vzpgpVWf7/rCb6jVNvfVyd57WeUSVQo0dX4cI020opAg+67XumwHXYYpNJvilzjDDDmg8MK0tjN67GNx4V8JFSdHdcDAY8inHURxW8eQf7Dizumk2ni2N6Scl1s0YYtCLi7DjGwhiA+4uLRGMKZ/FF0vjd6H+6lavuWmdxAQ6Ph46oFEfLrP1aw6kG+38UNms2n1QnGi46jJ4215JjAnPn78vVMFGhNwQ==
+X-MS-Office365-Filtering-Correlation-Id: 1f238c02-9247-4bdc-c1ee-08d48cc324bd
+X-DkimResult-Test: Failed
+X-Microsoft-Antispam: UriScan:;BCL:0;PCL:0;RULEID:(22001)(81800236)(3002016)(71702078);SRVR:FR1PR80MB1941;
+X-Microsoft-Exchange-Diagnostics: 1;FR1PR80MB1941;3:IGJbtuN7gbaa3MBqPgR0ByJXNyKDAzcsYz1ZEs3Aklmm6CvH/G8SNFpIpgeu7tuLGtrieOaCkhCnX10/Qk76hpu4sVLnfWowUzoXq0RJN0Gi+ulJrmmialyhIHSKYmeE//F0Syw5AjvcPhLsFfM5iVQLBQmVIA+AREnicV/KzIJzYrezerYxI4qu7PeKDz8RYlk9jNuCevvCUbha+7woGp+FHwe8yBUHNbmln1EiiuUJaMg0xtzvlh+LD6KCuQQ4G8nDMkk/2a7OD/2XkCDdYMLA7taRB0Ww9/VuPPseatVFjgyZcGfDaPQIEdQi+8ot3UYqGWnEgS2SHKCLnqZg9v/LIlTwiTQJq6mjnxlQwTAjEQWZ1cvpctU55GRS+VrWtLKzMji0KQw9I/ePcrXBJS/TkhCFhwnLOCYmHuSblhySIe3PDxIqUrokMVetF/Ry
+X-Microsoft-Exchange-Diagnostics: 1;FR1PR80MB1941;25:ZiVDBOJU4LXWokUf42qdfA6zWe4QG5HcWOgYtkNWncztMx+nhi+tw46r1mYHEBn1/wjSE0E9W//RfaJhlCfRGK25SkO6RKRO+TK2VDxMXD2ubsSIgKUfYzNQZ/ujEbEJruhj0rAd+OwebBk03qi9zsLHTarMulrnyARzCERrpTvJYZHGLq1YjOSdNG4AQQ7tL59bCXwtF6Q9VAx1GT1ECZuGvvLYvH9MEM/XVN3jHFD+e2btzjHH1X+8VQHQ+oNcHMF5Rq5CG4yd/BOaraVMkX1FU91sLvMRaiewUlbps5w6fz1oQaGfrtO2E4S0EFE1JPHlUyZa4iX6X4WQxY7OC0lEl06PUquafhlEqyxxfNLQ/XDbVX4fBMXIxo3GeIcs/j3ryCPjhpT6ZEZx3AX/Wf/GrP1uNB3yXhbkXW+7tYC0gnacp3A9I7MFh8ppuWqMqg7TYPXRfcNKW2Mg2tcpi6W0jV2teAWsJRyjGINNXs1/bYRyRpmf0X4eFZouVI1+;31:UHaMtFiSqN7j/fgP3jrnEP2h/a3PqOglVuvIBt7bYVKkNM8pPqwtUtEzWlVrcWeCxB3y9DSBhOZ7A3fZfvt+ufHuKSusPWYi+KcMHupgyw4DICvdfKq+bgwMyD9jbEbj61B2YtHtKTUxaJkqu9Nkvtq4lqOpZ1IIHPmVkhkEv3PBQsDEWX6NLX9iTk7c/k3sX9og+cKeH/Q3TaplEEYZT5ikBbxsCGpYSkke+nObgu/sMZL8mhfktEXYUOKap+gxN9oRip9mV9FsIxLxIzsv5AgJa0F8m3rGJ04jYYCkTNpXubnsLX3FILprAl0VWHbEI/t/Y06JfQrIXK7d98v2jg==
+X-MS-Exchange-Organization-AVStamp-Service: 1.0
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Exchange-Diagnostics: 1;FR1PR80MB1941;20:7ZsgdMVyCZrHWKLZ6TE/aM62fJE/UbcRfHjIS4KmrXG13Qqczr74YXMrPU79QVu5YyrPuMj2bdb62OLa4G80Ap8jIDMXDXoh13du2/rgkBO6Am3PzlobwqDy0IjAYKmcL15N13loIwz18ifYv5iOWTJMY2p9W8sGbWQOynXpwzWAtp676Zyr+ZPhdG0NvXPgyFw7wV6LAksNHoBYNhyxYyZd78ANhKJrfz3RFy65iua6feULGEVpSpZcVkgohVsj8m49yE3yfUl3hM/x8I+vlH1Lqxw+/A8o0gsqHBiMOWdBSdxu+o7t9LSCay7qCMpfse3qiYBmuB0Kky6cmXIZe13JhpuvHW0N8n+eoW5rOsUKNwPynSUVEDcwAan/oFkIN1VyqgFEzW4Yd6uQU9h2nlGTfcQq+1nXyN2TwiJaplHOc+HX+OrlO5wVnOe2G0uveJShDcFGiIdpJjfp/dqxtoa8EOJVJ501OPeg7RqBU+Q0r0GMkUCkNj0UrcGBo3nawF6khKYyCeMGHSrb5Aib12EcPejtDuLxei5WYqOpUgcj/klqjKbKRqtUs78r0Iu/nZd7RDesF/e5QiwR4m1D55EBbP2L88XBY9Iq1NQ2g+E=
+X-Exchange-Antispam-Report-Test: UriScan:(189930954265078)(166494164430575)(179696456005106)(225397452589623)(230580209791065);
+X-Exchange-Antispam-Report-CFA-Test: BCL:0;PCL:0;RULEID:(102415395)(601004)(2401047)(13018025)(13023025)(13024025)(13016025)(8121501046)(9101536074)(3002001)(93006095)(93003095)(10201501046);SRVR:FR1PR80MB1941;BCL:0;PCL:0;RULEID:;SRVR:FR1PR80MB1941;
+X-Microsoft-Exchange-Diagnostics: 1;FR1PR80MB1941;4:hUQ8zccSr2RRw0uuwNdAwnUnCYEIXSjfvMxaRe/YDXp4fIHkBix/eL/uEmEa5BQX9hVe5bN1tqgZj3douuzvdekL8F4NYileBoueQKVN6i80aH0LsDA6UixLiknNCBzwow14CXkFB1MtBV1xQzFb5568sdM+IdCBDemtdfermgF1hnbClhEjAe01MVLC+u+hjRIHxGzr6Uz1yyFUeTBXIvEDyQKCAjLXNxCek8ySkIuCPsNU5TTkHUX2PYFxtAp5f+UL3SE/1GFlwHNsoXBg4UDG7aH0hfC4ngW54fb63g9xZHrxz1TwX3URKNZLARX0o642adJx8IuCxxi6q3oKpOjfA1HFKlGyyza3cA/DINNtmQmkj/NtyBx2cBK7h7WlwZDMZzvPipxH2kx9/dG2T/qrlhN5Wc1aeXlAXe1siguZsZLSum7tadQbGmA8YaiVmv4iKGtorFWtvl2kSjYQ0F2zcASYxE1FNkP33Sm5hG1roPfOqHUr18HdLK1u+qQr0kPil/RUj2QjSqtq/Lw0EVbk8kp+rcHnZFCh1i3vaRrjUhqvNZbyAoh6UvNPOtTRxnQptvNqhrORD8Y1EnFH5GkQUABkzX4M7KPk4+cGQLKoHOsIkYh6rw5WR3Xl4Y4fylrxzr5t36sQ5VohZL7/3+GqQgyhkVjlMkmrM205JBZRqmjujDtWOIYuOFYhrywZyrtlT/3mYS36Lwh+3RC4Uw==;23:T5aJ116Li2R9CWMV7krhgii1yZU2NzjEyJR2PQaRGliyks52RXqWVVlYL22utvgZ8Ob7W8p/gryn/hO8sNCEzkHffUn0P+FjN8ZryLCO0gE+tJYX/TMVNBS//BnyFlE+yspzwxRxyOJCD9zEKyJYW37KBCD3sA2F2ZTtCNqzC8vp4ofauCemvkVwR65ZuCY+
+X-Microsoft-Exchange-Diagnostics: 1;FR1PR80MB1941;6:gsccKNT32AdJSredKM43AgMQ1bh2zyjUEUWyZCqwi3q1PLMzkxoVMDsW55HlS8jGxclhaabN8AMQcPbn6CRNPQ275C8DIw4T686JoF1M6VL2PFvtpICXtqYiY53z0kUNEwUG6PVlYLmUcFgjDVIp7TCJwS1NBuW81hmVNrecP/CMUla+I5tcS7d/wsr6HPfUyiIZYojHFROeh/9pidwZAKmmLAqnKpzZ81iVCnSWZ22Esx1ZHOx7V/0qz+i2MeQELAFGTeGTqJJc4VNwEpJn7rZlbI+F8CRhgLUdRQB31a8Igwk81P5NMptRmzcAF2ul0rF55lHBeezflKFbnfQW3qdeV16QQYIlwxPQwO5r5cmEyXRMDUFvVMui22DtKQJI7ZXO/O7ETbJxembHCjyGGkKvIDFR3l2AyOPKwmM6UjmScPNLa9tpvyHm0CAu/p4/;5:/ZmXDYAZ48X/5Zf6xLEX3Slq2yxgbnJvDs7KSZofhG6Lc3aI9A+eB3MLDUlJNVRFUyM4Kc0T1zUle7+uOE6lkIOUiLX1boxZocOInM0GpmtP7+i3qRUA/fQ040b2vwPNhgsHCAG9/mR2HM7Hbg+1lg==;24:J4d8EyqgSKP4AOeGRfuBphTigTCNG8PlzAFB3UGoAf7nl8YyHSL/mruulfTzqP/k0USBh9zuom9WrMHokDL/T1bY7fdQnNJOYmMR4RTFFjQ=
+SpamDiagnosticOutput: 1:2
+SpamDiagnosticMetadata: 4e1d06d604c84871b4209cacabce0af9
+X-Microsoft-Exchange-Diagnostics: 1;FR1PR80MB1941;7:9Bp4luQ/Tr0+ytKFzKYzwaHKiK0/uOGnHJ0Ypfk5OFxDKwja9zCi+Fm/rCu5R1W6Epuik2UJ3Suv2wX/4gawr9cICPeW63KeAge79VGSBOwnbzVs4r/1srdwkqj92y2p6rY5zuvZ1OUoD2128ok1S9VuKGrB3TnRxvooKlCPFtsqxVBm/hgNy6FabgZHRPfmd3fQSniwsbetfQw7DNUNXuFZ6egrm38YSmZLpw27d8zTcnwYnqByJHLwymLQTBJclBzsdbWK/qa9EgXuEasjU8+J8peUe7K2FUK+ARE/1xOYoAWjjHCuVMAfDBx411yq5QLZdTkv4Bl9v2UjE5bZb0nwT2QR67SidFb5ShlZ+uX/hPzCfJeOpfUKpZgBawrvi/nmDa++TvR5Qee3e80fZw==
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 26 Apr 2017 16:41:52.7447
+ (UTC)
+X-MS-Exchange-CrossTenant-Id: fec095e8-7415-4521-9abe-d8c80dedd2cf
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: FR1PR80MB1941
+X-Microsoft-Exchange-Diagnostics: 1;FR1PR80MB2070;23:b53zgMmmw/lgPWtp8h2HXGg78O1yPWLFPkVjb8M3890a7++MyTIIln+VWBaRTHQ5o0pMatS2AJnSpDluuYm6UVzht9jAxlEld0hW2ekAdUBCvg+dSUaFAb/cyQqmjCO4wnWbtn2A/c+d1xdlMwyrls/DuEzylmYlIydKU84zeAUbQyouRXuMfDQAx9Vg9O1z
+X-MS-Exchange-Organization-AuthSource: BL2NAM02FT043.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:06.2379980
+X-Microsoft-Exchange-Diagnostics:
+	1;CP2PR80MB2068;27:NcWt+bkedNN49ZpxoYDYB8Q2VMFqa+ahteVW84OpY+bTWVHdDZbfMX13WgrdhYRJoGWsGckqY3uSV64T99cZtCWWFLcRagr4Cgne9PKJyZwqGAl+t3qvOL0s1z7UNxZghZAwMrDf6qC+0tg4Wzb5YQ==
+MIME-Version: 1.0
+
+--------------0A55E8B9E8F0B1A7936C5AA7
+Content-Type: text/plain; charset="windows-1252"; format=flowed
+Content-Transfer-Encoding: 8bit
+X-Microsoft-Exchange-Diagnostics:
+	1;CP2PR80MB2068;27:NcWt+bkedNN49ZpxoYDYB8Q2VMFqa+ahteVW84OpY+bTWVHdDZbfMX13WgrdhYRJoGWsGckqY3uSV64T99cZtCWWFLcRagr4Cgne9PKJyZwqGAl+t3qvOL0s1z7UNxZghZAwMrDf6qC+0tg4Wzb5YQ==
+
+Boa tarde!
+
+Reserva alterada conforme solicitado.
+
+Atenciosamente,
+
+
+Em 26/04/2017 12:55, Maeda escreveu:
+>
+> Boa tarde!
+>
+>
+> Conforme contato telefï¿½nico com o Sr. Josh segue correï¿½ï¿½o do perï¿½odo 
+> da reserva do Sr. Josh Ronald:
+>
+>
+>
+> Hospede: Josh Ronald Moreira Junior
+>
+> Perï¿½odo de 25/04 ï¿½ 26/04
+>
+> Valor da Diï¿½ria R$ 145,00
+>
+> Faturar conforme abaixo:
+>
+>
+> FATURAR DIï¿½RIAS,TAXAS,CAFï¿½ DA MANHï¿½, SUCO, ï¿½GUA, REFRIGERANTE E 
+> ESTACIONAMENTO
+> GARANTIMOS NO-SHOW BRASILTOUR - TARIFA NET - CNPJ 11.222.555/0001-22
+> FATURAS: fat@group.com
+>
+>
+>
+> Atenciosamente ,
+>
+>
+>
+> Edmond Louis
+>
+> destinatary@host.com <mailto:destinatary@host.com>
+>
+> Atendimento Posto Virtual SSSX
+> BRASILTOUR XXX
+> telefone +55 11 3333-2222
+> direto +55 11 3333-2222
+> celular +55
+> emergencial +55 11 3333-5555
+>
+> 			 
+> <https://intranet.BRASILTOUR.com/click/redirecionar/5/9f9591607c82fbc6901d580e10a3167a> 
+>
+>
+> <https://intranet.BRASILTOUR.com/click/redirecionar/39/9f9591607c82fbc6901d580e10a3167a> 
+>
+>
+>
+>
+>
+> ------------------------------------------------------------------------
+> *De:* Maria <atendimento@examplehotel.com.br>
+> *Enviado:* quinta-feira, 20 de abril de 2017 14:44
+> *Para:* Maeda
+> *Assunto:* Re: Solicitaï¿½ï¿½o de Reserva - Josh Ronald Moreira Jr.
+>
+> Edmond, boa tarde!
+>
+> A reserva ï¿½ para o hotel Gualahara.
+>
+> Fico ï¿½ inteira disposiï¿½ï¿½o para maiores esclarecimentos.
+>
+> Atenciosamente,
+>
+>
+> Em 20/04/2017 14:40, Maeda escreveu:
+>>
+>> Maria, boa tarde
+>>
+>>
+>> Sï¿½ tirando uma dï¿½vida, a reserva abaixo confirmada ï¿½ no Hotel Aniversario?
+>>
+>>
+>> Atenciosamente ,
+>>
+>>
+>>
+>> *Edmond Louis*
+>>
+>>
+>> *
+>> *
+>>
+>> destinatary@host.com <mailto:destinatary@host.com>
+>>
+>> Atendimento Posto Virtual BRASILTOUR
+>> BRASILTOUR XXX
+>> telefone +1122225555
+>> direto +1122225555
+>> celular +55
+>> emergencial +55 11 3333-5555
+>>
+>> 			 
+>> <https://intranet.BRASILTOUR.com/click/redirecionar/5/9f9591607c82fbc6901d580e10a3167a> 
+>>
+>>
+>> <https://intranet.BRASILTOUR.com/click/redirecionar/32/9f9591607c82fbc6901d580e10a3167a> 
+>>
+>>
+>>
+>>
+>>
+>> ------------------------------------------------------------------------
+>> *De:* Maria <atendimento@examplehotel.com.br>
+>> *Enviado:* quinta-feira, 20 de abril de 2017 14:29
+>> *Para:* Maeda
+>> *Assunto:* Re: Solicitaï¿½ï¿½o de Reserva - Josh Ronald Moreira Jr.
+>>
+>> Boa tarde!
+>>
+>> Solicitaï¿½ï¿½o de reserva confirmada.
+>>
+>> Att.,
+>>
+>>
+>> Em 20/04/2017 11:40, BRASILTOUR - Maeda escreveu:
+>>>
+>>> Bom dia!
+>>>
+>>>
+>>> Solicito reserva no perï¿½odo de 25 ï¿½ 27/04 - apto single.
+>>>
+>>> Nome do Hospede: Josh Ronald Moreira Junior
+>>>
+>>> Diï¿½ria R$ 145,00
+>>>
+>>> Faturar conforme informaï¿½ï¿½es abaixo:
+>>>
+>>>
+>>> FATURAR DIï¿½RIAS,TAXAS,CAFï¿½ DA MANHï¿½, SUCO, ï¿½GUA, REFRIGERANTE E 
+>>> ESTACIONAMENTO
+>>>
+>>> GARANTIMOS NO-SHOW BRASILTOUR
+>>>
+>>> CNPJ 11.222.555/0001-22
+>>>
+>>> FATURAS: fat@group.com
+>>>
+>>>
+>>> Peï¿½o a reserva desta forma devido ao meu sistema estar com problemas 
+>>> na geraï¿½ï¿½o do voucher
+>>>
+>>>
+>>> Aguardo confirmaï¿½ï¿½o
+>>>
+>>>
+>>> Atenciosamente ,
+>>>
+>>> Edmond Louis
+>>>
+>>> destinatary@host.com
+>>>
+>>> Atendimento Posto Virtual BRASILTOUR
+>>> BRASILTOUR XXX
+>>> telefone +1122225555
+>>> direto +1122225555
+>>> celular +55
+>>> emergencial +55 11 3333-5555
+>>>
+>>> 			 
+>>> <https://intranet.BRASILTOUR.com/click/redirecionar/5/9f9591607c82fbc6901d580e10a3167a> 
+>>>
+>>>
+>>> <https://intranet.BRASILTOUR.com/click/redirecionar/32/9f9591607c82fbc6901d580e10a3167a> 
+>>>
+>>>
+>>
+>
+
+
+--------------0A55E8B9E8F0B1A7936C5AA7
+Content-Type: multipart/related;
+	boundary="------------ED1F132AFF52C107DADC3B8B"
+X-Microsoft-Exchange-Diagnostics:
+	1;CP2PR80MB2068;27:NcWt+bkedNN49ZpxoYDYB8Q2VMFqa+ahteVW84OpY+bTWVHdDZbfMX13WgrdhYRJoGWsGckqY3uSV64T99cZtCWWFLcRagr4Cgne9PKJyZwqGAl+t3qvOL0s1z7UNxZghZAwMrDf6qC+0tg4Wzb5YQ==
+
+--------------ED1F132AFF52C107DADC3B8B
+Content-Type: text/html; charset="windows-1252"
+Content-Transfer-Encoding: 8bit
+X-Microsoft-Exchange-Diagnostics:
+	1;CP2PR80MB2068;27:NcWt+bkedNN49ZpxoYDYB8Q2VMFqa+ahteVW84OpY+bTWVHdDZbfMX13WgrdhYRJoGWsGckqY3uSV64T99cZtCWWFLcRagr4Cgne9PKJyZwqGAl+t3qvOL0s1z7UNxZghZAwMrDf6qC+0tg4Wzb5YQ==
+
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+  </head>
+  <body bgcolor="#FFFFFF" text="#000000">
+    <p>Boa tarde!<br>
+      <br>
+      Reserva alterada conforme solicitado.<br>
+      <br>
+      Atenciosamente,<br>
+    </p>
+    <div class="moz-signature"><br>
+      <img src="cid:part1.0516DA7D.C6D39444@examplehotel.com.br" border="0"></div>
+    <div class="moz-cite-prefix">Em 26/04/2017 12:55, Maeda escreveu:<br>
+    </div>
+    <blockquote cite="mid:SC1PR80MB1949C8574CF7B8DDCDA4BFB2B4110@SC1PR80MB1949.lamprd80.prod.outlook.com" type="cite">
+      
+      <style type="text/css" style="display:none;"><!-- P {margin-top:0;margin-bottom:0;} --></style>
+      <div id="divtagdefaultwrapper" dir="ltr" style="font-size:12pt;
+        color:#000000; font-family:Arial,Helvetica,sans-serif">
+        <p>Boa tarde!</p>
+        <p><br>
+        </p>
+        <p>Conforme contato telefï¿½nico com o Sr. Josh&nbsp;segue correï¿½ï¿½o do
+          perï¿½odo da reserva do Sr. Josh Ronald:</p>
+        <p><br>
+        </p>
+        <p><br>
+        </p>
+        <p>Hospede: Josh Ronald Moreira Junior</p>
+        <p>Perï¿½odo de 25/04 ï¿½ 26/04</p>
+        <p>Valor da Diï¿½ria R$ 145,00</p>
+        <p>Faturar conforme abaixo:</p>
+        <p><br>
+        </p>
+        <div>FATURAR DIï¿½RIAS,TAXAS,CAFï¿½ DA MANHï¿½, SUCO, ï¿½GUA,
+          REFRIGERANTE E ESTACIONAMENTO</div>
+        <div>GARANTIMOS NO-SHOW BRASILTOUR - TARIFA NET - CNPJ
+          11.222.555/0001-22</div>
+        <div>FATURAS: <a class="moz-txt-link-abbreviated" href="mailto:fat@group.com">fat@group.com</a></div>
+        <p><br>
+        </p>
+        <p><br>
+        </p>
+        <div id="Signature">
+          <div id="divtagdefaultwrapper" dir="ltr" style="font-size:12pt; color:rgb(0,0,0);
+            background-color:rgb(255,255,255)">
+            <span style="font-family:Calibri,Arial,Helvetica,sans-serif;
+              font-size:12pt">
+              <p><span style="font-size:12pt;
+                  font-family:Arial,Helvetica,sans-serif"></span></p>
+              <div style="color:rgb(0,0,0);
+                font-family:Arial,Helvetica,sans-serif; font-size:16px">
+                <span style="font-size:12pt;
+                  font-family:Calibri,Arial,Helvetica,sans-serif">Atenciosamente&nbsp;</span><span style="font-size:12pt;
+                  font-family:Calibri,Arial,Helvetica,sans-serif">,&nbsp;</span><br>
+              </div>
+            </span>
+            <p style="font-family:Calibri,Arial,Helvetica,sans-serif"><br>
+            </p>
+            <div id="x_Signature" style="font-family:wf_segoe-ui_normal,&quot;Segoe
+              UI&quot;,&quot;Segoe WP&quot;,Tahoma,Arial,sans-serif;
+              color:rgb(33,33,33)">
+              <div id="x_divtagdefaultwrapper">
+                <div name="x_divtagdefaultwrapper">
+                  <table style="font-family:'Times New Roman';
+                    padding-top:10px" border="0" cellpadding="0" cellspacing="0" width="500">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <table style="font-family:&quot;Times New
+                            Roman&quot;; padding-top:10px" border="0" cellpadding="0" cellspacing="0" width="500">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <table border="0" cellpadding="0" cellspacing="0" width="500">
+                                    <tbody>
+                                      <tr>
+                                        <td style="padding-top:10px" valign="top" width="220"><span style="font-size:14px;
+                                            font-family:Arial,Helvetica,sans-serif;
+                                            font-weight:bold;
+                                            color:rgb(205,32,39)"><br>
+                                            Edmond Louis<br>
+                                          </span><br>
+                                          <span style="font-size:12px;
+                                            font-family:Arial,Helvetica,sans-serif"><a moz-do-not-send="true" href="mailto:destinatary@host.com" id="LPNoLP" style="color:rgb(66,63,64)">destinatary@host.com</a></span>
+                                          <p style="font-size:11px;
+                                            font-family:Arial,Helvetica,sans-serif;
+                                            color:rgb(66,63,64)">
+                                            Atendimento Posto Virtual
+                                            SSSX<br>
+                                            BRASILTOUR XXX<br>
+                                            telefone &#43;55 11 3333-2222<br>
+                                            direto &#43;55 11 3333-2222<br>
+                                            celular &#43;55&nbsp;<br>
+                                            emergencial &#43;55 11 3333-5555</p>
+                                        </td>
+                                        <td width="5">&nbsp;</td>
+                                        <td valign="middle" width="2"><img moz-do-not-send="true" alt="" style="padding: 10px
+                                            10px 0px; user-select:
+                                            none;" src="https://intranet.BRASILTOUR.com/assets/custom/img/assinatura/2016/barra/barra-BRASILTOURXXX.jpg" height="100" width="2"></td>
+                                        <td width="5">&nbsp;</td>
+                                        <td align="left" valign="middle" width="289"><a moz-do-not-send="true" href="https://intranet.BRASILTOUR.com/click/redirecionar/5/9f9591607c82fbc6901d580e10a3167a" id="LPNoLP" style=""><img moz-do-not-send="true" style="border: none;
+                                              margin-left: 30px;
+                                              user-select: none;" src="https://intranet.BRASILTOUR.com/assets/custom/img/assinatura/2017/logos/BRASILTOUR-XXX.jpg" border="0"></a></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td><a moz-do-not-send="true" href="https://intranet.BRASILTOUR.com/click/redirecionar/39/9f9591607c82fbc6901d580e10a3167a" title="https://intranet.BRASILTOUR.com/click/redirecionar/39/9f9591607c82fbc6901d580e10a3167a
+                                    Ctrl&#43;Clique ou toque para seguir o
+                                    link" id="LPNoLP" style=""><img moz-do-not-send="true" style="border: none; user-select:
+                                      none;" src="https://intranet.BRASILTOUR.com/assets/custom/img/assinatura/2017/banner/melhor-agencia-mice.jpg" border="0"></a></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <br>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <p class="x_MsoNormal" style="font-family:&quot;Times New
+              Roman&quot;,serif; margin:0cm 0cm 12pt; font-size:12pt;
+              color:rgb(33,33,33)">
+              <span style="font-family:Arial,sans-serif; color:black"></span></p>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div style="color:rgb(0,0,0)">
+          <hr tabindex="-1" style="display:inline-block; width:98%">
+          <div id="divRplyFwdMsg" dir="ltr"><font style="font-size:11pt" face="Calibri, sans-serif" color="#000000"><b>De:</b>
+              Maria <a class="moz-txt-link-rfc2396E" href="mailto:atendimento@examplehotel.com.br">&lt;atendimento@examplehotel.com.br&gt;</a><br>
+              <b>Enviado:</b> quinta-feira, 20 de abril de 2017 14:44<br>
+              <b>Para:</b> Maeda<br>
+              <b>Assunto:</b> Re: Solicitaï¿½ï¿½o de Reserva - Josh Ronald
+              Moreira Jr.</font>
+            <div>&nbsp;</div>
+          </div>
+          <div>
+            <p>Edmond, boa tarde!<br>
+              <br>
+              A reserva ï¿½ para o hotel Gualahara.<br>
+              <br>
+              Fico ï¿½ inteira disposiï¿½ï¿½o para maiores esclarecimentos.<br>
+              <br>
+              Atenciosamente,<br>
+            </p>
+            <div class="moz-signature"><br>
+              <img explicitlogon="destinatary@host.com" naturalheight="221" naturalwidth="448" tabindex="0" style="user-select:
+                none;" src="cid:part8.8476E61B.E0F44B5F@examplehotel.com.br" border="0"></div>
+            <div class="moz-cite-prefix">Em 20/04/2017 14:40, Maeda
+              escreveu:<br>
+            </div>
+            <blockquote type="cite">
+              <div id="divtagdefaultwrapper" dir="ltr" style="font-size:12pt; color:#000000;
+                font-family:Arial,Helvetica,sans-serif">
+                <p>Maria, boa tarde</p>
+                <p><br>
+                </p>
+                <p>Sï¿½ tirando uma dï¿½vida, a reserva abaixo confirmada ï¿½
+                  no Hotel Aniversario?</p>
+                <p><br>
+                </p>
+                <div id="Signature">
+                  <div id="divtagdefaultwrapper" dir="ltr" style="font-size:12pt; color:rgb(0,0,0);
+                    background-color:rgb(255,255,255)">
+                    <span style="font-family:Calibri,Arial,Helvetica,sans-serif;
+                      font-size:12pt">
+                      <p><span style="font-size:12pt;
+                          font-family:Arial,Helvetica,sans-serif"></span></p>
+                      <div style="color:rgb(0,0,0);
+                        font-family:Arial,Helvetica,sans-serif;
+                        font-size:16px">
+                        <span style="font-size:12pt;
+                          font-family:Calibri,Arial,Helvetica,sans-serif">Atenciosamente&nbsp;</span><span style="font-size:12pt;
+                          font-family:Calibri,Arial,Helvetica,sans-serif">,&nbsp;</span><br>
+                      </div>
+                    </span>
+                    <p style="font-family:Calibri,Arial,Helvetica,sans-serif"><span style="color:rgb(0,0,0);
+                        font-family:Arial,Helvetica,sans-serif;
+                        font-size:12pt"><span style="font-family:Arial,Helvetica,sans-serif"><br>
+                        </span></span></p>
+                    <p style="font-family:Calibri,Arial,Helvetica,sans-serif"><br>
+                    </p>
+                    <p><b>Edmond Louis</b></p>
+                    <p><br>
+                    </p>
+                    <p style="font-family:Calibri,Arial,Helvetica,sans-serif"><span style="color:rgb(0,0,0);
+                        font-family:Arial,Helvetica,sans-serif;
+                        font-size:12pt"><span style="font-family:Arial,Helvetica,sans-serif"><b><br>
+                          </b></span></span></p>
+                    <div id="x_Signature" style="">
+                      <div id="x_divtagdefaultwrapper">
+                        <div name="x_divtagdefaultwrapper">
+                          <table style="font-family:'Times New Roman';
+                            padding-top:10px" border="0" cellpadding="0" cellspacing="0" width="500">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <table border="0" cellpadding="0" cellspacing="0" width="500">
+                                    <tbody>
+                                      <tr>
+                                        <td style="padding-top:10px" valign="top" width="220"><span style="font-size:12px;
+                                            font-family:Arial,Helvetica,sans-serif"><a moz-do-not-send="true" href="mailto:destinatary@host.com" id="LPNoLP" style="text-decoration:none;
+                                              color:rgb(66,63,64)">destinatary@host.com</a></span>
+                                          <p style="font-size:11px;
+                                            font-family:Arial,Helvetica,sans-serif;
+                                            color:rgb(66,63,64)">
+                                            Atendimento Posto Virtual
+                                            BRASILTOUR<br>
+                                            BRASILTOUR XXX<br>
+                                            telefone &#43;1122225555<br>
+                                            direto &#43;1122225555<br>
+                                            celular &#43;55&nbsp;<br>
+                                            emergencial &#43;55 11 3333-5555</p>
+                                        </td>
+                                        <td width="5">&nbsp;</td>
+                                        <td valign="middle" width="2"><img moz-do-not-send="true" alt="" style="padding: 10px
+                                            10px 0px; user-select:
+                                            none;" src="https://intranet.BRASILTOUR.com/assets/custom/img/assinatura/2016/barra/barra-BRASILTOURXXX.jpg" height="100" width="2"></td>
+                                        <td width="5">&nbsp;</td>
+                                        <td align="left" valign="middle" width="289"><a moz-do-not-send="true" href="https://intranet.BRASILTOUR.com/click/redirecionar/5/9f9591607c82fbc6901d580e10a3167a" id="LPNoLP" style="text-decoration:none"><img moz-do-not-send="true" style="border: none;
+                                              margin-left: 30px;
+                                              user-select: none;" src="https://intranet.BRASILTOUR.com/assets/custom/img/assinatura/2016/logos/selo-25.jpg" border="0" width="200"></a></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td><a moz-do-not-send="true" href="https://intranet.BRASILTOUR.com/click/redirecionar/32/9f9591607c82fbc6901d580e10a3167a" id="LPNoLP" style="text-decoration:none"><img moz-do-not-send="true" style="border: none; user-select:
+                                      none;" src="https://intranet.BRASILTOUR.com/assets/custom/img/assinatura/2016/banners/BRASILTOUR_melhor.jpg" border="0" width="390"></a></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <br>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="x_MsoNormal" style=""><span style="font-family:Arial,sans-serif;
+                        color:black"></span></p>
+                  </div>
+                </div>
+                <br>
+                <br>
+                <div style="color:rgb(0,0,0)">
+                  <hr tabindex="-1" style="display:inline-block;
+                    width:98%">
+                  <div id="divRplyFwdMsg" dir="ltr"><font style="font-size:11pt" face="Calibri, sans-serif" color="#000000"><b>De:</b> Maria
+                      <a moz-do-not-send="true" class="moz-txt-link-rfc2396E" href="mailto:atendimento@examplehotel.com.br">
+                        &lt;atendimento@examplehotel.com.br&gt;</a><br>
+                      <b>Enviado:</b> quinta-feira, 20 de abril de 2017
+                      14:29<br>
+                      <b>Para:</b> Maeda<br>
+                      <b>Assunto:</b> Re: Solicitaï¿½ï¿½o de Reserva - Josh
+                      Ronald Moreira Jr.</font>
+                    <div>&nbsp;</div>
+                  </div>
+                  <div>
+                    <p>Boa tarde!<br>
+                      <br>
+                      Solicitaï¿½ï¿½o de reserva confirmada.<br>
+                      <br>
+                      Att.,<br>
+                    </p>
+                    <div class="moz-signature"><br>
+                      <img explicitlogon="destinatary@host.com" naturalheight="221" naturalwidth="448" tabindex="0" style="user-select: none;" src="cid:part16.D3CD202C.4A795434@examplehotel.com.br" border="0"></div>
+                    <div class="moz-cite-prefix">Em 20/04/2017 11:40,
+                      BRASILTOUR - Maeda escreveu:<br>
+                    </div>
+                    <blockquote type="cite">
+                      <p>Bom dia!</p>
+                      <p><br>
+                      </p>
+                      <p>Solicito reserva no perï¿½odo de 25 ï¿½ 27/04 -
+                        apto single.</p>
+                      <p>Nome do Hospede: Josh Ronald Moreira Junior</p>
+                      <p>Diï¿½ria R$ 145,00&nbsp;</p>
+                      <p>Faturar conforme informaï¿½ï¿½es abaixo:</p>
+                      <p><br>
+                      </p>
+                      <p>FATURAR DIï¿½RIAS,TAXAS,CAFï¿½ DA MANHï¿½, SUCO,
+                        ï¿½GUA, REFRIGERANTE E ESTACIONAMENTO</p>
+                      <p>GARANTIMOS NO-SHOW BRASILTOUR</p>
+                      <p>CNPJ 11.222.555/0001-22</p>
+                      <p>FATURAS: <a moz-do-not-send="true" class="moz-txt-link-abbreviated" href="mailto:fat@group.com">
+                          fat@group.com</a></p>
+                      <p><br>
+                      </p>
+                      <p>Peï¿½o a reserva desta forma devido ao meu
+                        sistema estar com problemas na geraï¿½ï¿½o do
+                        voucher</p>
+                      <p><br>
+                      </p>
+                      <p>Aguardo confirmaï¿½ï¿½o</p>
+                      <p><br>
+                      </p>
+                      <div class="split
+                        signature-B2ADEE7C179C613D3A038F3D643C2C06">
+                        <p>Atenciosamente&nbsp;,&nbsp;</p>
+                        <p>Edmond Louis</p>
+                        <table style="width:500px" border="0" cellpadding="0" cellspacing="0">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <table style="width:500px" border="0" cellpadding="0" cellspacing="0">
+                                  <tbody>
+                                    <tr>
+                                      <td><a moz-do-not-send="true" target="_blank"><span style="color:#000000">destinatary@host.com</span></a>
+                                        <p>Atendimento Posto Virtual
+                                          BRASILTOUR<br>
+                                          BRASILTOUR XXX<br>
+                                          telefone &#43;1122225555<br>
+                                          direto &#43;1122225555<br>
+                                          celular &#43;55&nbsp;<br>
+                                          emergencial&nbsp;<a moz-do-not-send="true" target="_blank"><span style="color:#000000">&#43;55
+                                              11 3333-5555</span></a></p>
+                                      </td>
+                                      <td>&nbsp;</td>
+                                      <td><img moz-do-not-send="true" alt="" style="height: 100px;
+                                          width: 2px; user-select:
+                                          none;" src="http://BRASILTOUR.encontact.com.br/clientes/BRASILTOUR/images/redbar.jpg"></td>
+                                      <td>&nbsp;</td>
+                                      <td><a moz-do-not-send="true" href="https://intranet.BRASILTOUR.com/click/redirecionar/5/9f9591607c82fbc6901d580e10a3167a" target="_blank"><img moz-do-not-send="true" style="width: 200px;
+                                            user-select: none;" src="http://BRASILTOUR.encontact.com.br/clientes/BRASILTOUR/images/BRASILTOURLogo.jpg"></a></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td><a moz-do-not-send="true" href="https://intranet.BRASILTOUR.com/click/redirecionar/32/9f9591607c82fbc6901d580e10a3167a" target="_blank"><img moz-do-not-send="true" style="width:
+                                    390px; user-select: none;" src="https://ci3.googleusercontent.com/proxy/O79QaW19OqDhctptBgNx8FyAwi5Sau47BcSpmXG4RQ9g8I7fNQPW7u-5C5eGTuza6A34iHVpYTB5hhaCsz_QR3zoRlazbxtGZ5SNARg1VnS0PI9ozTa9joXGUI9iwCeaXtRNoIDoGzlT6gHDTw=s0-d-e1-ft#https://intranet.BRASILTOUR.com/assets/custom/img/assinatura/2016/banners/BRASILTOUR_melhor.jpg"></a></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <p>&nbsp;</p>
+                      </div>
+                    </blockquote>
+                    <br>
+                  </div>
+                </div>
+              </div>
+            </blockquote>
+            <br>
+          </div>
+        </div>
+      </div>
+    </blockquote>
+    <br>
+  </body>
+</html>
+
+
+--------------0A55E8B9E8F0B1A7936C5AA7--
