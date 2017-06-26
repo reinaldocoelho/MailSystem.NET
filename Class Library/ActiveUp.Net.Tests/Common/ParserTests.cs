@@ -262,5 +262,34 @@ namespace ActiveUp.Net.Tests.Common
             Assert.IsFalse(string.IsNullOrWhiteSpace(message.BodyHtml.Text));
         }
 
+        [Test(Description = "")]
+        public void MustParseEmlFromIphone()
+        {
+            var message = Parser.ParseMessageFromFile(_baseDir + "\\resource\\html_multipart_email_with_more_than_one_subpart.eml");
+            Assert.AreEqual("B82DBC10-2267-41A9-B3CC-A019752FE6E1@gmail.com", message.MessageId);
+            Assert.AreEqual("RES: Email multipart related multilevel", message.Subject);
+            Assert.IsFalse(string.IsNullOrWhiteSpace(message.BodyText.Text));
+            var textMessageExpected = @"Hi,
+
+I?m the first step of message to test.
+
+Sender
+Helper
+E-mail: sender@sender.com
+Web: www.sender.com<http://www.sender.com/>
+
+";
+            var resultText = message.BodyText.Text;
+            Assert.AreEqual(textMessageExpected, resultText);
+            Assert.IsFalse(string.IsNullOrWhiteSpace(message.BodyHtml.Text));
+            var htmlMessageExpected = @"<html><body><div><h1>Part 1</h1></div></body></html>
+
+<html><body dir=""auto""><head><meta http-equiv=""content-type"" content=""text/html; charset=us-ascii""></head><blockquote type=""cite""><div></div></blockquote><blockquote type=""cite""><div><meta http-equiv=""content-type"" content=""text/html; charset=us-ascii""><blockquote type=""cite""><div></div></blockquote><blockquote type=""cite""><div></div></blockquote></div></blockquote><blockquote type=""cite""><div></div></blockquote></body></html>
+<html><body dir=""auto""><head><meta http-equiv=""content-type"" content=""text/html; charset=us-ascii""></head><blockquote type=""cite""><div></div></blockquote><blockquote type=""cite""><div><meta http-equiv=""content-type"" content=""text/html; charset=us-ascii""><blockquote type=""cite""><div></div></blockquote><blockquote type=""cite""><div></div></blockquote></div></blockquote><blockquote type=""cite""><div></div></blockquote></body></html>
+<html><head><meta http-equiv=""content-type"" content=""text/html; charset=us-ascii""></head><body dir=""auto""><blockquote type=""cite""><div></div></blockquote><blockquote type=""cite""><div><meta http-equiv=""content-type"" content=""text/html; charset=us-ascii""><blockquote type=""cite""><div></div></blockquote></div></blockquote></body></html>";
+            var resultHtml = message.BodyHtml.Text;
+            Assert.AreEqual(htmlMessageExpected, resultHtml);
+        }
+
     }
 }

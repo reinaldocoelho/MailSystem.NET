@@ -266,7 +266,7 @@ namespace ActiveUp.Net.Mail
                         {
                             message.IsHtml = true;
                             message.BodyHtml.Charset = part.Charset;
-                            message.BodyHtml.Text = part.TextContent;
+                            message.BodyHtml.Text += part.TextContent;
                         }
                     }
                     else if (part.ContentType.SubType.ToLower().Equals("xml") && !added)

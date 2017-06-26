@@ -1,0 +1,91 @@
+Resent-From: <group1@destinataryhost.com>
+Received: from FR1PR80CA0030.lamprd80.prod.outlook.com (10.170.192.16) by
+ FR1PR80MB0117.lamprd80.prod.outlook.com (10.165.12.146) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.1.1157.12; Tue, 13 Jun 2017 16:08:03 +0000
+Received: from CY1NAM02FT055.eop-nam02.prod.protection.outlook.com
+ (2a01:111:f400:7e45::209) by FR1PR80CA0030.outlook.office365.com
+ (2603:10d6:201::16) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id 15.1.1178.14 via
+ Frontend Transport; Tue, 13 Jun 2017 16:08:03 +0000
+Authentication-Results: spf=pass (sender IP is 209.85.216.177)
+ smtp.mailfrom=gmail.com; destinataryhost.com; dkim=pass (signature was verified)
+ header.d=gmail.com;destinataryhost.com; dmarc=pass action=none
+ header.from=gmail.com;
+Received-SPF: Pass (protection.outlook.com: domain of gmail.com designates
+ 209.85.216.177 as permitted sender) receiver=protection.outlook.com;
+ client-ip=209.85.216.177; helo=mail-qt0-f177.google.com;
+Received: from mail-qt0-f177.google.com (209.85.216.177) by
+ CY1NAM02FT055.mail.protection.outlook.com (10.152.74.80) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P384) id
+ 15.1.1157.12 via Frontend Transport; Tue, 13 Jun 2017 16:08:02 +0000
+Received: by mail-qt0-f177.google.com with SMTP id c10so178158468qtd.1
+        for <group1@destinataryhost.com>; Tue, 13 Jun 2017 09:08:02 -0700 (PDT)
+Return-Path: mary@gmail.com
+Received: from ?IPv6:2804:214:82d4:3d11:39a4:2cf8:4e20:e820? ([2804:214:82d4:3d11:39a4:2cf8:4e20:e820])
+        by smtp.gmail.com with ESMTPSA id t42sm9245033qtg.43.2017.06.13.09.01.52
+        for <group1@destinataryhost.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 13 Jun 2017 09:07:59 -0700 (PDT)
+From: Mary LastName <mary@gmail.com>
+Content-Type: multipart/alternative;
+	boundary="Apple-Mail-FF4F0049-3AA5-4B4B-B290-E33B19552D36"
+Content-Transfer-Encoding: 7bit
+Mime-Version: 1.0 (1.0)
+Date: Tue, 13 Jun 2017 13:01:16 -0300
+Subject: RES: Email multipart related multilevel
+Message-Id: <B82DBC10-2267-41A9-B3CC-A019752FE6E1@gmail.com>
+References: <37687CF4-1BA4-49F1-9604-D2E8851FF642@nike.com>
+To: group1@destinataryhost.com
+
+--Apple-Mail-FF4F0049-3AA5-4B4B-B290-E33B19552D36
+Content-Type: text/plain;
+	charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Hi,
+
+I´m the first step of message to test.
+
+Sender
+Helper
+E-mail: sender@sender.com
+Web: www.sender.com<http://www.sender.com/>
+
+
+--Apple-Mail-FF4F0049-3AA5-4B4B-B290-E33B19552D36
+Content-Type: multipart/mixed;
+	boundary=Apple-Mail-7DDE80A0-39B3-4835-88AB-726571155D9D
+Content-Transfer-Encoding: 7bit
+
+--Apple-Mail-7DDE80A0-39B3-4835-88AB-726571155D9D
+Content-Type: text/html;
+	charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><body><div><h1>Part 1</h1></div></body></html>
+
+
+--Apple-Mail-7DDE80A0-39B3-4835-88AB-726571155D9D
+Content-Type: text/html;
+	charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+<html><body dir="auto"><head><meta http-equiv="content-type" content="text/html; charset=us-ascii"></head><blockquote type="cite"><div></div></blockquote><blockquote type="cite"><div><meta http-equiv="content-type" content="text/html; charset=us-ascii"><blockquote type="cite"><div></div></blockquote><blockquote type="cite"><div></div></blockquote></div></blockquote><blockquote type="cite"><div></div></blockquote></body></html>
+
+--Apple-Mail-7DDE80A0-39B3-4835-88AB-726571155D9D
+Content-Type: text/html;
+	charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+<html><body dir="auto"><head><meta http-equiv="content-type" content="text/html; charset=us-ascii"></head><blockquote type="cite"><div></div></blockquote><blockquote type="cite"><div><meta http-equiv="content-type" content="text/html; charset=us-ascii"><blockquote type="cite"><div></div></blockquote><blockquote type="cite"><div></div></blockquote></div></blockquote><blockquote type="cite"><div></div></blockquote></body></html>
+
+--Apple-Mail-7DDE80A0-39B3-4835-88AB-726571155D9D
+Content-Type: text/html;
+	charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+<html><head><meta http-equiv="content-type" content="text/html; charset=us-ascii"></head><body dir="auto"><blockquote type="cite"><div></div></blockquote><blockquote type="cite"><div><meta http-equiv="content-type" content="text/html; charset=us-ascii"><blockquote type="cite"><div></div></blockquote></div></blockquote></body></html>
+--Apple-Mail-7DDE80A0-39B3-4835-88AB-726571155D9D--
+
+--Apple-Mail-FF4F0049-3AA5-4B4B-B290-E33B19552D36--
