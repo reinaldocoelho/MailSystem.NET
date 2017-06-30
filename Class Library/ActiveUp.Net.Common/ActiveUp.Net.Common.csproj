@@ -166,6 +166,8 @@
     <Compile Include="Rfc2047\Rfc2047Codec.cs" />
     <Compile Include="Rfc2047\Separator.cs" />
     <Compile Include="Rfc2047\EncodedWord.cs" />
+    <Compile Include="Rfc2184\Rfc2184ContentParameterParser.cs" />
+    <Compile Include="Rfc2184\Rfc2184ItemParser.cs" />
     <Compile Include="SaslMechanism.cs" />
     <Compile Include="Server.cs" />
     <Compile Include="ServerCollection.cs" />

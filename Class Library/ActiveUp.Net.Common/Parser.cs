@@ -23,6 +23,7 @@ using System;
 using System.Text;
 using ActiveUp.Net.Security;
 using System.IO;
+using ActiveUp.Net.Common;
 
 namespace ActiveUp.Net.Mail
 {
@@ -101,12 +102,16 @@ namespace ActiveUp.Net.Mail
             {
                 MimeType = Regex.Match(input, @"(?<=: ?)\S+?(?=([;\s]|\Z))").Value
             };
+
+            var parameterParser = new Rfc2184ContentParameterParser();
             var parammatch = Regex.Match(input, @"(?<=;\s*)[^;\s?]*=[^;]*(?=(;|\Z))");
-            while (parammatch.Success)
+            for (; parammatch.Success; parammatch = parammatch.NextMatch())
             {
-                field.Parameters.Add(FormatFieldName(parammatch.Value.Substring(0, parammatch.Value.IndexOf('='))).ToLower(), parammatch.Value.Substring(parammatch.Value.IndexOf('=') + 1).Replace("\"", "").Trim('\r', '\n'));
-                parammatch = parammatch.NextMatch();
+                parameterParser.Add(parammatch.Value);
             }
+            parameterParser.Parse();
+            field.Parameters.Add(parameterParser.Parameters);
+
             return field;
         }
 
@@ -117,12 +122,21 @@ namespace ActiveUp.Net.Mail
         /// <returns></returns>
         private static ContentDisposition GetContentDisposition(string input)
         {
-            ContentDisposition field = new ContentDisposition();
+            var field = new ContentDisposition()
+            {
+                Disposition = Regex.Match(input.Replace("\t", ""), @"(?<=: ?)\S+?(?=([;\s]|\Z))").Value
+            };
+
+            var parameterParser = new Rfc2184ContentParameterParser();
             //TODO: include TAB detection in Regex
-            field.Disposition = Regex.Match(input.Replace("\t", ""), @"(?<=: ?)\S+?(?=([;\s]|\Z))").Value;
-            //TODO: include TAB detection in Regex
-            Match parammatch = Regex.Match(input.Replace("\t", ""), @"(?<=;[ \t]?)[^;]*=[^;]*(?=(;|\Z))");
-            for (; parammatch.Success; parammatch = parammatch.NextMatch()) field.Parameters.Add(FormatFieldName(parammatch.Value.Substring(0, parammatch.Value.IndexOf('='))), parammatch.Value.Substring(parammatch.Value.IndexOf('=') + 1).Replace("\"", "").Trim('\r', '\n'));
+            var parammatch = Regex.Match(input.Replace("\t", ""), @"(?<=;[ \t]?)[^;]*=[^;]*(?=(;|\Z))");
+            for (; parammatch.Success; parammatch = parammatch.NextMatch())
+            {
+                parameterParser.Add(parammatch.Value);
+            }
+            parameterParser.Parse();
+            field.Parameters.Add(parameterParser.Parameters);
+
             return field;
         }
 
