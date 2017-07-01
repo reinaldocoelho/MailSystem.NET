@@ -54,8 +54,9 @@ namespace ActiveUp.Net.Common
                 var itemCount = nameStructure.Substring(firstAsteriskIndex);
                 if (itemCount.Contains("*"))
                 {
+                    var newIndex = 0;
                     var actualIndex = itemCount.Replace("*", "");
-                    if (Int32.TryParse(actualIndex, out int newIndex))
+                    if (Int32.TryParse(actualIndex, out newIndex))
                     {
                         Index = newIndex;
                     }
