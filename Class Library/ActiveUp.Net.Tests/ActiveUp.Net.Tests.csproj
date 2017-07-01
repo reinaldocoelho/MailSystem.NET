@@ -119,6 +119,9 @@
     <None Include="resource\content-transfer-encode-8bit-charset-utf8-new-lined.eml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="resource\email_with_attach_rfc2184.eml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="resource\html_multipart_email_with_more_than_one_subpart.eml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

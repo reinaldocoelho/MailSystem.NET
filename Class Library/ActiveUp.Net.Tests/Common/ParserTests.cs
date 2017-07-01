@@ -289,5 +289,61 @@ Web: www.sender.com<http://www.sender.com/>
             Assert.AreEqual(htmlMessageExpected, resultHtml);
         }
 
+        [Test(Description = "From GitHub Issue 23.")]
+        public void MustParseRussianEmlWithRFC2184()
+        {
+            var message = Parser.ParseMessageFromFile(_baseDir + "\\resource\\email_with_attach_rfc2184.eml");
+            Assert.AreEqual("b475ae12b1e08b0ce84702ff5a52b89b@autodepo.ru", message.MessageId);
+            Assert.AreEqual("Прайс", message.Subject);
+            Assert.IsFalse(string.IsNullOrWhiteSpace(message.BodyText.Text));
+            var textMessageExpected = @" 
+
+-- 
+
+ РЎ РЈР’РђР–Р•РќРР•Рњ, РЎР•Р Р“Р•Р™ РџРР›РР¦РљРР™ 
+
+РЎРџР•Р¦РРђР›РРЎРў РћРўР”Р•Р›Рђ РРќРўР•Р РќР•Рў-РџР РћР”РђР–
+
+РћРћРћ ""РђРІС‚РѕР”РµРїРѕ""
+Рі. РњРѕСЃРєРІР°, Р’РѕСЃС‚СЂСЏРєРѕРІСЃРєРёР№ РїСЂРѕРµР·Рґ, РІР»Р°РґРµРЅРёРµ 10, РєРѕСЂРї.1 (РњРљРђР” 31РєРј)
+РўРµР».: (495) 374-91-88
+РњРѕР±.: +7 985 613-6988
+Skype: retail.msc.ad
+www.autodepo.ru [1] 
+
+ 
+
+Links:
+------
+[1] http://autodepo.ru/
+";
+            var resultText = message.BodyText.Text;
+            Assert.AreEqual(textMessageExpected, resultText);
+            Assert.IsFalse(string.IsNullOrWhiteSpace(message.BodyHtml.Text));
+            var htmlMessageExpected = @"<!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN""><html>
+<head>
+<meta http-equiv=""Content-Type"" content=""text/html; charset=utf-8""></head>
+<body style=""font-family: Verdana,Geneva,sans-serif"">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div>-- <br>
+<pre>&nbsp;</pre>
+<table class="" cke_show_border"" cellspacing=""10"">
+<tbody>
+<tr>
+<td valign=""top"">
+<div><img style=""border-radius: 45px; width: 90px; height: 90px;"" src=""http://autodepo.ru/dna/images/useravatar/thumbs/5edef865738da8299112d9732bb935d2.jpg"" alt=""""></div>
+</td>
+<td><strong>С уважением, Сергей Пилицкий </strong><br><br><strong>Специалист отдела интернет-продаж</strong><br><br>ООО &quot;АвтоДепо&quot;<br>г. Москва, Востряковский проезд, владение 10, корп.1 (МКАД 31км)<br>Тел.: (495) 374-91-88<br>Моб.: &#43;7 985 613-6988<br>Skype: retail.msc.ad<br><a href=""http://autodepo.ru/"">www.autodepo.ru</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</body></html>
+";
+            var resultHtml = message.BodyHtml.Text;
+            Assert.AreEqual(htmlMessageExpected, resultHtml);
+            Assert.AreEqual("%D0%9F%D1%80%D0%B0%D0%B9%D1%81-%D0%BB%D0%B8%D1%81%D1%82%20%D0%90%D0%B2%D1%82%D0%BE%D0%B4%D0%B5%D0%BF%D0%BE%20%D0%9C%D0%A1%D0%9A%2005_04_17.xls", message.Attachments[0].Filename);
+        }
     }
 }
